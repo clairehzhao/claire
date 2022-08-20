@@ -6,7 +6,7 @@
 
 https://clairehzhao.github.io/claire/
 
-# My Blog
+# Claire's Blog
 
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_
