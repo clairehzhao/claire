@@ -2,8 +2,8 @@
   
     
         "post0": {
-            "title": "Markdown Post",
-            "content": "",
+            "title": "Title",
+            "content": ". title: &quot;Markdown Post&quot; description: &quot;Post made using markdown&quot; layout: post toc: false . comments: true . Markdown Post . Post made using markdown . . Markdown can be used to format text when writing. . Some feautures include:1. bold text2. italicized text . emojis 😊 | color color color color&lt;/li&gt; different fonts | striketrhough | images | &lt;/ol&gt; . &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; |",
             "url": "https://clairehzhao.github.io/claire/2022/08/20/markdown-blog-post.html",
             "relUrl": "/2022/08/20/markdown-blog-post.html",
             "date": " • Aug 20, 2022"
