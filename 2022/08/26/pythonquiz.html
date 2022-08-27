@@ -133,45 +133,38 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">questions</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="k">def</span> <span class="nf">q_a</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">a</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Good job! That is correct!&quot;</span><span class="p">)</span>
+        <span class="n">score</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nice try! The answer is &quot;</span> <span class="o">+</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">score</span>
+ 
+<span class="c1">#intro:</span>
 <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hey! &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
-<span class="n">ready</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;This quiz will have 4 questions that will test your abilities to identify python terms. Are you ready to start this quiz? Answer yes or no.&quot;</span><span class="p">)</span>
+<span class="n">ready</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;This quiz will have &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; questions that will test your abilities to identify python terms. Are you ready to start this quiz? Answer yes or no.&quot;</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">ready</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Let&#39;s get started!&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;YOU GOT THIS!&quot;</span><span class="p">)</span>
 
 <span class="c1">#question 1:</span>
-<span class="n">answer1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Question 1: What term defines a function or method?&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">answer1</span> <span class="o">==</span> <span class="s2">&quot;def&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Good job! That is correct!&quot;</span><span class="p">)</span>
-    <span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nice try! The correct answer is def.&quot;</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="n">q_a</span><span class="p">(</span><span class="s2">&quot;Question 1: What term defines a function or method?&quot;</span><span class="p">,</span> <span class="s2">&quot;def&quot;</span><span class="p">)</span>
 
 <span class="c1">#question 2:</span>
-<span class="n">answer2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Question 2: What is a series of characters?&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">answer2</span> <span class="o">==</span> <span class="s2">&quot;string&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Great job! That is correct!&quot;</span><span class="p">)</span>
-    <span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That was a good try but the answer is string!&quot;</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="n">q_a</span><span class="p">(</span><span class="s2">&quot;Question 2: What is a series of characters?&quot;</span><span class="p">,</span> <span class="s2">&quot;string&quot;</span><span class="p">)</span>
 
 <span class="c1">#question 3:</span>
-<span class="n">answer3</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Question 3: What input prints specified messages on the screen?&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">answer3</span> <span class="o">==</span> <span class="s2">&quot;print&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Amazing! You know your stuff!&quot;</span><span class="p">)</span>
-    <span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That was a close one! The answer was print.&quot;</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="n">q_a</span><span class="p">(</span><span class="s2">&quot;Question 3: What input prints specified messages on the screen?&quot;</span><span class="p">,</span> <span class="s2">&quot;print&quot;</span><span class="p">)</span>
 
 <span class="c1">#question 4:</span>
-<span class="n">answer4</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Question 4: What is a value that is either true or false?&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">answer4</span> <span class="o">==</span> <span class="s2">&quot;boolean&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You did great! That is correct!&quot;</span><span class="p">)</span>
-    <span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Thats okay, you tried your best. The correct answer was boolean.&quot;</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="n">q_a</span><span class="p">(</span><span class="s2">&quot;Question 4: What is a value that is either true or false?&quot;</span><span class="p">,</span> <span class="s2">&quot;boolean&quot;</span><span class="p">)</span>
 
 <span class="c1">#ending score</span>
 <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
@@ -193,9 +186,9 @@ window.onload = wrap_img;
 <pre>Hey! Claire
 Let&#39;s get started!
 Good job! That is correct!
-Great job! That is correct!
-Amazing! You know your stuff!
-Thats okay, you tried your best. The correct answer was boolean.
+Nice try! The answer is string
+Good job! That is correct!
+Good job! That is correct!
 Congratulations! You completed this quiz with an amazing score! You scored a: 3/4
 </pre>
 </div>
