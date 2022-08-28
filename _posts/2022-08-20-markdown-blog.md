@@ -6,11 +6,6 @@ toc: false
 comments: true
 ---
 
-# Markdown Post
-> Post made using markdown
-
----
-
 ##### Markdown can be used to format text when writing. 
 ### Some feautures include:
 1. **bold text**

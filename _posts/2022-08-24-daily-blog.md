@@ -5,5 +5,10 @@ layout: post
 toc: false
 comments: true
 show_images: true
-image: /images/diagram.png
+image: /images/cspphoto.png
 ---
+
+## Day at Del Norte High School
+# First period:
+AP Calculus AB
+
