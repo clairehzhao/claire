@@ -5,5 +5,5 @@ layout: post
 toc: false
 comments: true
 show_images: true
-image: https://github.com/clairehzhao/claire.git/images/cspphoto.png
+image: /images/diagram.png
 ---
