@@ -15,10 +15,8 @@ AP Calculus AB
 - Currently learning limits
 - Reviewing functions
 - About 15 questions for homework a day
-- Quiz on limits this Tuesday (8/30)
-
+- Quiz on limits this Tuesday (8/30)     
 In class:
-
 - Warm Up
 - Check homework
 - Go over warm up and homework
