@@ -7,8 +7,8 @@ comments: true
 show_images: true
 image: /images/cspphoto.png
 ---
-![]({{ site.baseurl }}/images/cspphoto.png "blog photo")
-## Day at Del Norte High School
-# First period:
+
+# Day at Del Norte High School
+## First period:
 AP Calculus AB
 
