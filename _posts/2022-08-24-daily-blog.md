@@ -11,4 +11,5 @@ image: /images/cspphoto.png
 # Day at Del Norte High School
 ## First period:
 AP Calculus AB
+Starts at 8:35 am
 
