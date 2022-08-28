@@ -16,6 +16,7 @@ AP Calculus AB
 - Reviewing functions
 - About 15 questions for homework a day
 - Quiz on limits this Tuesday (8/30)     
+
 In class:
 - Warm Up
 - Check homework
