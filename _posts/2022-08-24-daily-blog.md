@@ -54,8 +54,8 @@ AP Biology
 ## Fourth Period:
 AP CSP
 - Starts at 12:57
-- Using Github, VSCode, Markdown, and Python
-- Learning to use Github
+- Using GitHub, VSCode, Markdown, and Python
+- Learning to use GitHub
 - Learning to use VSCode
 - Learning to use python to make a quiz
 - Learning to use markdown to make blogs about the day and take notes
