@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Title",
+            "content": "echo &quot;Using conditional statement to create a project directory and project&quot; export project_dir=$HOME/vscode export project=$project_dir/APCSP export project_repo=&quot;https://github.com/nighthawkcoders/APCSP.git&quot; cd ~ if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... making directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; if [ ! -d $project ] then echo &quot;Directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ .",
+            "url": "https://clairehzhao.github.io/claire/2022/08/27/bashinstallcheck.html",
+            "relUrl": "/2022/08/27/bashinstallcheck.html",
+            "date": " • Aug 27, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Python Vocab Quiz",
             "content": "score = 0 questions = 4 def q_a(q, a): answer = input(q) score = 0 if answer == a: print(&quot;Good job! That is correct!&quot;) score = 1 else: print(&quot;Nice try! The answer is &quot; + a + &quot;.&quot;) return score #intro: name = input(&quot;Enter your name:&quot;) print(&quot;Hey! &quot; + name) ready = input(&quot;This quiz will have &quot; + str(questions) + &quot; questions that will test your abilities to identify python terms. Are you ready to start this quiz? Answer yes or no.&quot;) if ready == &quot;yes&quot;: print(&quot;Let&#39;s get started!&quot;) else: print(&quot;YOU GOT THIS!&quot;) #question 1: score = score + q_a(&quot;Question 1: What term defines a function or method?&quot;, &quot;def&quot;) #question 2: score = score + q_a(&quot;Question 2: What is a series of characters?&quot;, &quot;string&quot;) #question 3: score = score + q_a(&quot;Question 3: What input prints specified messages on the screen?&quot;, &quot;print&quot;) #question 4: score = score + q_a(&quot;Question 4: What is a value that is either true or false?&quot;, &quot;boolean&quot;) #ending score if score &gt;= 3: print(&quot;Congratulations! You completed this quiz with an amazing score! You scored a: {}/4&quot; .format(score)) else: print(&quot;Congratulations! You completed the quiz. Your score is a: {}/4&quot; .format(score)) . Hey! Claire Let&#39;s get started! Good job! That is correct! Good job! That is correct! Good job! That is correct! Nice try! The answer is boolean. Congratulations! You completed this quiz with an amazing score! You scored a: 3/4 .",
             "url": "https://clairehzhao.github.io/claire/2022/08/26/pythonquiz.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Markdown Post",
             "content": "Markdown Post . Post made using markdown . . Markdown can be used to format text when writing. . Some feautures include: . bold text | italicized text | emojis 😊 | color color color color | different fonts | striketrhough | images | .",
             "url": "https://clairehzhao.github.io/claire/2022/08/20/markdown-blog.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Hey World - Python",
             "content": "Code . msg = &quot;Hey World&quot; print (msg) . Hey World .",
             "url": "https://clairehzhao.github.io/claire/2022/08/20/First-Post.html",
