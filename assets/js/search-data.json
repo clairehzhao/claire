@@ -84,7 +84,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "This website is powered by fastpages 1. . Hey! My name is Claire Zhao, and I am a sophomore at Del Norte High School. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "Hey! My name is Claire Zhao, and I am a sophomore at Del Norte High School. .",
           "url": "https://clairehzhao.github.io/claire/about/",
           "relUrl": "/about/",
           "date": ""
@@ -97,7 +97,7 @@
   
       ,"page3": {
           "title": "Progress",
-          "content": "Week # Title Learning . Week #0 | Tools Setup | &lt;ul&gt;&lt;li&gt;created personal fastpages&lt;/li&gt;&lt;li&gt;created markdown post&lt;/li&gt;&lt;/ul&gt; | . Week #1 | Intro Python, Jupyter, Fastpages |   | . Week #2 | Data Abstraction |   | .",
+          "content": "Week # Title Learning . Week #0 | Tools Setup | * created personal fastpages * created markdown post * created jupyter notebook post * learned to use VSCODE | . Week #1 | Intro Python, Jupyter, Fastpages |   | . Week #2 | Data Abstraction |   | .",
           "url": "https://clairehzhao.github.io/claire/progress/",
           "relUrl": "/progress/",
           "date": ""
