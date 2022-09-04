@@ -6,6 +6,15 @@ comments: true
 show_images: true
 image: /images/themechange.png
 ---
-
-### Remote Theme Change
-![theme change photo](https://github.com/clairehzhao/claire/blob/master/images/themechangecode.png)
+![theme change photo](/images/themechangecode.png)
+# Theme Change Findings
+## Front Page
+- color theme changed
+- blog links are only on right side of the page
+- links and words overlapping each other
+- hard to read
+## Individual Posts
+- code only takes up half of the page
+- code and words overlap
+- blog site title still in actual post
+- images will not load
