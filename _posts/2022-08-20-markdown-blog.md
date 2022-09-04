@@ -2,7 +2,7 @@
 title: "Markdown Post"
 description: "Post made using markdown"
 layout: post
-toc: false
+toc: true
 comments: true
 ---
 
