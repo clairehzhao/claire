@@ -5,6 +5,7 @@ layout: post
 comments: true
 show_images: true
 image: /images/themechange.png
+toc: true
 ---
 ![theme change photo](/images/themechangecode.png)
 # Theme Change Findings
