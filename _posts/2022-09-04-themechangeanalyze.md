@@ -7,7 +7,7 @@ show_images: true
 image: /images/themechange.png
 toc: true
 ---
-![theme change photo](/images/themechangecode.png)
+![theme change photo](images/themechangecode.png)
 # Theme Change Findings
 ## Front Page
 - color theme changed
