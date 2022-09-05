@@ -4,8 +4,8 @@
         "post0": {
             "title": "Remote Theme Change",
             "content": ". Theme Change Findings . Front Page . color theme changed | blog links are only on right side of the page | links and words overlapping each other | hard to read Individual Posts . | code only takes up half of the page | code and words overlap | blog site title still in actual post | images will not load | .",
-            "url": "https://clairehzhao.github.io/claire/2022/09/04/themechangeanalyze.html",
-            "relUrl": "/2022/09/04/themechangeanalyze.html",
+            "url": "https://clairehzhao.github.io/claire/markdown/week2/2022/09/04/themechangeanalyze.html",
+            "relUrl": "/markdown/week2/2022/09/04/themechangeanalyze.html",
             "date": " • Sep 4, 2022"
         }
         
@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "CSP Terms",
             "content": "Push/Pull - to send/recieve code to and from GitHub . Print - input that prints a specific method on the screen . Markdown - syntax used to format plain text . Define - defining a function or method . If statement - used for conditional execution . Front Matter - section of code that is on top of files with key-values . Variable - word used as a container to hold information . String - series of characters . Boolean - value that is either true or false .",
-            "url": "https://clairehzhao.github.io/claire/2022/08/27/cspterms.html",
-            "relUrl": "/2022/08/27/cspterms.html",
+            "url": "https://clairehzhao.github.io/claire/markdown/week1/2022/08/27/cspterms.html",
+            "relUrl": "/markdown/week1/2022/08/27/cspterms.html",
             "date": " • Aug 27, 2022"
         }
         
@@ -48,8 +48,8 @@
         ,"post4": {
             "title": "Daily Blog",
             "content": "Day at Del Norte High School . First Period: . AP Calculus AB . Starts at 8:35 am | Currently learning limits | Reviewing functions | About 15 questions for homework a day | Quiz on limits this Tuesday (8/30) | . In class: . Warm Up | Check homework | Go over warm up and homework | Notes on new material | Homework time | . Second Period: . Honors Humanities . Starts at 9:49 am | Learning about the definition of art | Working on annotating and reading challenging texts | Notebook check turned in on Friday | . Break . 10 minute break . Hangout with friends! | . Third period: . AP Biology . Starts at 11:13 | First unit is unit 7 | Learning about evolution | No homework in class, just spend 30 minutes taking notes | Using videos, concept maps, and the textbook to take notes | Notes not turned in | Learning about Galapagos Finches | Working on projects in a group | . Lunch: . 30 minute lunch . Go to lunch tutorial if needed | Having fun with friends! | . Fourth Period: . AP CSP . Starts at 12:57 | Using GitHub, VSCode, Markdown, and Python | Learning to use GitHub | Learning to use VSCode | Learning to use python to make a quiz | Learning to use markdown to make blogs about the day and take notes | . Office Hours: . 25 minutes . Ask teachers questions | Work on homework | . Fifth Period: . Offroll! . Starts at 2:36 | Work on homework with friends! | . Field Hockey . 4-6pm | Playing Field Hockey with my amazing team | .",
-            "url": "https://clairehzhao.github.io/claire/2022/08/24/daily-blog.html",
-            "relUrl": "/2022/08/24/daily-blog.html",
+            "url": "https://clairehzhao.github.io/claire/markdown/week1/2022/08/24/daily-blog.html",
+            "relUrl": "/markdown/week1/2022/08/24/daily-blog.html",
             "date": " • Aug 24, 2022"
         }
         
@@ -59,8 +59,8 @@
         ,"post5": {
             "title": "Markdown Post",
             "content": "Markdown can be used to format text when writing. . Some feautures include: . bold text | italicized text | emojis 😊 | color color color color | different fonts | striketrhough | images | .",
-            "url": "https://clairehzhao.github.io/claire/2022/08/20/markdown-blog.html",
-            "relUrl": "/2022/08/20/markdown-blog.html",
+            "url": "https://clairehzhao.github.io/claire/markdown/week0/2022/08/20/markdown-blog.html",
+            "relUrl": "/markdown/week0/2022/08/20/markdown-blog.html",
             "date": " • Aug 20, 2022"
         }
         
@@ -70,8 +70,8 @@
         ,"post6": {
             "title": "Hey World - Python",
             "content": "Code . msg = &quot;Hey World&quot; print (msg) . Hey World .",
-            "url": "https://clairehzhao.github.io/claire/jupyter/week0/2022/08/20/First-Post.html",
-            "relUrl": "/jupyter/week0/2022/08/20/First-Post.html",
+            "url": "https://clairehzhao.github.io/claire/week0/2022/08/20/First-Post.html",
+            "relUrl": "/week0/2022/08/20/First-Post.html",
             "date": " • Aug 20, 2022"
         }
         
