@@ -6,8 +6,9 @@ comments: true
 show_images: true
 image: /images/themechange.png
 toc: true
+categories: [markdown, week2]
 ---
-![theme change photo](images/themechangecode.png)
+![theme change photo](https://cdn.discordapp.com/attachments/806618712056528906/1016150708975845447/themechangecode.jpg)
 # Theme Change Findings
 ## Front Page
 - color theme changed

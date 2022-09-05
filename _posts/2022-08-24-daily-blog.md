@@ -6,6 +6,7 @@ toc: true
 comments: true
 show_images: true
 image: /images/cspphoto.png
+categories: [markdown, week1]
 ---
 
 # Day at Del Norte High School

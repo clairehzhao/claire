@@ -4,6 +4,7 @@ description: "Post made using markdown"
 layout: post
 toc: true
 comments: true
+categories: [markdown, week0]
 ---
 
 ##### Markdown can be used to format text when writing. 
