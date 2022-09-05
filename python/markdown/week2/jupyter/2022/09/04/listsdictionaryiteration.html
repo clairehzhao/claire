@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Info Data Base | claire’s apcsp blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Info Data Base" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List Dictionary Iteration using python" />
+<meta property="og:description" content="List Dictionary Iteration using python" />
+<link rel="canonical" href="https://clairehzhao.github.io/claire/python/markdown/week2/jupyter/2022/09/04/listsdictionaryiteration.html" />
+<meta property="og:url" content="https://clairehzhao.github.io/claire/python/markdown/week2/jupyter/2022/09/04/listsdictionaryiteration.html" />
+<meta property="og:site_name" content="claire’s apcsp blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-04T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Info Data Base" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-04T00:00:00-05:00","datePublished":"2022-09-04T00:00:00-05:00","description":"List Dictionary Iteration using python","headline":"Info Data Base","mainEntityOfPage":{"@type":"WebPage","@id":"https://clairehzhao.github.io/claire/python/markdown/week2/jupyter/2022/09/04/listsdictionaryiteration.html"},"url":"https://clairehzhao.github.io/claire/python/markdown/week2/jupyter/2022/09/04/listsdictionaryiteration.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/claire/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://clairehzhao.github.io/claire/feed.xml" title="claire's apcsp blog" /><link rel="shortcut icon" type="image/x-icon" href="/claire/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/claire/">claire&#39;s apcsp blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/claire/about/">About Me</a><a class="page-link" href="/claire/progress/">Progress</a><a class="page-link" href="/claire/search/">Search</a><a class="page-link" href="/claire/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Info Data Base</h1><p class="page-description">List Dictionary Iteration using python</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-04T00:00:00-05:00" itemprop="datePublished">
+        Sep 4, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/claire/categories/#python">python</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/claire/categories/#markdown">markdown</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/claire/categories/#week2">week2</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/claire/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/clairehzhao/claire/tree/master/_notebooks/2022-09-04-listsdictionaryiteration.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/claire/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/clairehzhao/claire/master?filepath=_notebooks%2F2022-09-04-listsdictionaryiteration.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/claire/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/clairehzhao/claire/blob/master/_notebooks/2022-09-04-listsdictionaryiteration.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/claire/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fclairehzhao%2Fclaire%2Fblob%2Fmaster%2F_notebooks%2F2022-09-04-listsdictionaryiteration.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/claire/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-09-04-listsdictionaryiteration.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The database InfoDb has information on two schools. Each including their name, principal, year the school was built, school level, number of students, number of teachers, zip code, and the school colors. Using the school name, this information will be found through through the dictionary.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Append to List a Dictionary of key/value related to the school and information</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">&quot;SchoolName&quot;</span><span class="p">:</span> <span class="s2">&quot;Del Norte High School&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Principal&quot;</span><span class="p">:</span> <span class="s2">&quot;Bryan Schultz&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Founded&quot;</span><span class="p">:</span> <span class="s2">&quot;2009&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;SchoolLevel&quot;</span><span class="p">:</span> <span class="s2">&quot;Highschool&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;StudentNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;2585&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;TeacherNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;92&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Zipcode&quot;</span><span class="p">:</span> <span class="s2">&quot;92127&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;SchoolColors&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Navy Blue, Forest Green, Vegas Gold&quot;</span><span class="p">]</span>
+
+<span class="p">})</span>
+
+<span class="c1"># Append to List a 2nd Dictionary with key/values</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">&quot;SchoolName&quot;</span><span class="p">:</span> <span class="s2">&quot;Westview High School&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Principal&quot;</span><span class="p">:</span> <span class="s2">&quot;Ernie Remillard&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Founded&quot;</span><span class="p">:</span> <span class="s2">&quot;2002&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;SchoolLevel&quot;</span><span class="p">:</span> <span class="s2">&quot;Highschool&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;StudentNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;2376&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;TeacherNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;85&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Zipcode&quot;</span><span class="p">:</span> <span class="s2">&quot;92129&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;SchoolColors&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Black, White, Vegas Gold&quot;</span><span class="p">]</span>
+
+<span class="p">})</span>
+
+<span class="c1"># Print Data Structure</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{&#39;SchoolName&#39;: &#39;Del Norte High School&#39;, &#39;Principal&#39;: &#39;Bryan Schultz&#39;, &#39;Founded&#39;: &#39;2009&#39;, &#39;SchoolLevel&#39;: &#39;Highschool&#39;, &#39;StudentNumber&#39;: &#39;2585&#39;, &#39;TeacherNumber&#39;: &#39;92&#39;, &#39;Zipcode&#39;: &#39;92127&#39;, &#39;SchoolColors&#39;: [&#39;Navy Blue, Forest Green, Vegas Gold&#39;]}, {&#39;SchoolName&#39;: &#39;Westview High School&#39;, &#39;Principal&#39;: &#39;Ernie Remillard&#39;, &#39;Founded&#39;: &#39;2002&#39;, &#39;SchoolLevel&#39;: &#39;Highschool&#39;, &#39;StudentNumber&#39;: &#39;2376&#39;, &#39;TeacherNumber&#39;: &#39;85&#39;, &#39;Zipcode&#39;: &#39;92129&#39;, &#39;SchoolColors&#39;: [&#39;Black, White, Vegas Gold&#39;]}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the code above, both schools information was saved in the dictionary.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_school</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_school</span><span class="p">[</span><span class="s2">&quot;SchoolName&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Principal:&quot;</span><span class="p">,</span> <span class="n">d_school</span><span class="p">[</span><span class="s2">&quot;Principal&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Founded:&quot;</span><span class="p">,</span> <span class="n">d_school</span><span class="p">[</span><span class="s2">&quot;Founded&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;School Type:&quot;</span><span class="p">,</span> <span class="n">d_school</span><span class="p">[</span><span class="s2">&quot;SchoolLevel&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Number of Students:&quot;</span><span class="p">,</span> <span class="n">d_school</span><span class="p">[</span><span class="s2">&quot;StudentNumber&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Number of Teachers:&quot;</span><span class="p">,</span> <span class="n">d_school</span><span class="p">[</span><span class="s2">&quot;TeacherNumber&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;ZipCode:&quot;</span><span class="p">,</span> <span class="n">d_school</span><span class="p">[</span><span class="s2">&quot;Zipcode&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;School Colors:&quot;</span><span class="p">,</span> <span class="n">d_school</span><span class="p">[</span><span class="s2">&quot;SchoolColors&quot;</span><span class="p">])</span>
+
+<span class="c1"># for loop algorithm iterates on length of InfoDb</span>
+<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">InfoDb</span><span class="p">:</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+    
+<span class="n">for_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Del Norte High School
+	 Principal: Bryan Schultz
+	 Founded: 2009
+	 School Type: Highschool
+	 Number of Students: 2585
+	 Number of Teachers: 92
+	 ZipCode: 92127
+	 School Colors: [&#39;Navy Blue, Forest Green, Vegas Gold&#39;]
+Westview High School
+	 Principal: Ernie Remillard
+	 Founded: 2002
+	 School Type: Highschool
+	 Number of Students: 2376
+	 Number of Teachers: 85
+	 ZipCode: 92129
+	 School Colors: [&#39;Black, White, Vegas Gold&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the code above, the for loop was able to iterate over the InfoDb to find the information of the school and print the information.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="n">while_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Del Norte High School
+	 Principal: Bryan Schultz
+	 Founded: 2009
+	 School Type: Highschool
+	 Number of Students: 2585
+	 Number of Teachers: 92
+	 ZipCode: 92127
+	 School Colors: [&#39;Navy Blue, Forest Green, Vegas Gold&#39;]
+Westview High School
+	 Principal: Ernie Remillard
+	 Founded: 2002
+	 School Type: Highschool
+	 Number of Students: 2376
+	 Number of Teachers: 85
+	 ZipCode: 92129
+	 School Colors: [&#39;Black, White, Vegas Gold&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The while loop above printed the school's information as long as the variable being used is less than the length of the InfoDb.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_loop</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">recursive_loop</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span>
+
+<span class="n">recursive_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Del Norte High School
+	 Principal: Bryan Schultz
+	 Founded: 2009
+	 School Type: Highschool
+	 Number of Students: 2585
+	 Number of Teachers: 92
+	 ZipCode: 92127
+	 School Colors: [&#39;Navy Blue, Forest Green, Vegas Gold&#39;]
+Westview High School
+	 Principal: Ernie Remillard
+	 Founded: 2002
+	 School Type: Highschool
+	 Number of Students: 2376
+	 Number of Teachers: 85
+	 ZipCode: 92129
+	 School Colors: [&#39;Black, White, Vegas Gold&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The code above was able to print the school information by using a recursive loop, which calls itself repeatedly.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_schoolname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter which school you would like to search for:&quot;</span><span class="p">)</span>
+<span class="n">input_information</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter what you are searching for: ex. Principal, SchoolName, Founded, SchoolLevel, StudentNumber, TeacherNumber, Zipcode, or SchoolColors&quot;</span><span class="p">)</span>
+
+<span class="c1"># define function to print records</span>
+<span class="k">def</span> <span class="nf">search_school</span><span class="p">():</span>
+    
+    <span class="k">for</span> <span class="n">info</span> <span class="ow">in</span> <span class="n">InfoDb</span><span class="p">:</span>
+        <span class="n">found_school</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">found_info</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">found_key</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">info</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">found_school</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">info</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">==</span> <span class="n">input_schoolname</span><span class="p">:</span>
+                    <span class="n">found_school</span> <span class="o">=</span> <span class="mi">1</span>
+                    <span class="c1"># print(&quot;School is found&quot; + str(found_school) + &quot;\n&quot;)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">found_info</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">input_information</span><span class="p">:</span>
+                    <span class="n">found_key</span> <span class="o">=</span> <span class="n">key</span>
+                    <span class="n">found_info</span> <span class="o">=</span> <span class="mi">1</span>
+                    <span class="c1"># print(&quot;key is &quot; + key + &quot;\n&quot;)</span>
+    
+        <span class="k">if</span> <span class="p">(</span><span class="n">found_school</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">found_info</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;School Name: &quot;</span> <span class="o">+</span> <span class="n">input_schoolname</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Information: &quot;</span> <span class="o">+</span> <span class="n">found_key</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">info</span><span class="p">[</span><span class="n">found_key</span><span class="p">])</span>
+            <span class="k">return</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">found_school</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">found_info</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Information not found.&quot;</span><span class="p">)</span>
+
+<span class="n">search_school</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>School Name: Del Norte High School
+Information: Zipcode: 92127
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Using a for loop the code was able to take information from the dictionary and compare it with the user input. By doing so, the user can choose which piece of information it would like to view.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/claire/python/markdown/week2/jupyter/2022/09/04/listsdictionaryiteration.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/claire/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/claire/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/claire/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>My Blog Site!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/claire/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/claire/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
