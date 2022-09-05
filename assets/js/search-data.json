@@ -26,8 +26,8 @@
         ,"post2": {
             "title": "Bash Installation Check",
             "content": "%%bash #Check version of Conda conda_version=$(conda -V 2&gt;&amp;1 | sed -n &#39;;s/.*conda (.* )/ 1/p;&#39;) #conda_version=$(conda -V 2&gt;&amp;1 | sed -n &#39;;s/.*conda &quot; (.* ) . (.* ) ..*&quot;.*/ 1 2/p;&#39;) #conda_version=&#39;conda -V | sed -n &#39;;s/conda &quot; (.* ) . (.* ) ..*&quot;.*/ 1 2/p;&#39; #echo $conda_version #Check version of Python python_version=`python -c &#39;import sys; version=sys.version_info[:3]; print(&quot;{0}.{1}.{2}&quot;.format(*version))&#39;` #Print using conditional statement if [ $conda_version &gt; &quot;0&quot; ]; then echo &quot;Conda version: &quot;$conda_version else echo &quot;Conda not installed&quot; fi if [ $python_version &gt; &quot;0&quot; ]; then echo &quot;Python version: &quot;$python_version else echo &quot;Python not installed&quot; fi . Conda version: 4.14.0 Python version: 3.9.12 .",
-            "url": "https://clairehzhao.github.io/claire/2022/08/27/bashinstallcheck.html",
-            "relUrl": "/2022/08/27/bashinstallcheck.html",
+            "url": "https://clairehzhao.github.io/claire/bash/week1/jupyter/2022/08/27/bashinstallcheck.html",
+            "relUrl": "/bash/week1/jupyter/2022/08/27/bashinstallcheck.html",
             "date": " • Aug 27, 2022"
         }
         
@@ -37,8 +37,8 @@
         ,"post3": {
             "title": "Python Vocab Quiz",
             "content": "score = 0 questions = 4 def q_a(q, a): answer = input(q) score = 0 if answer == a: print(&quot;Good job! That is correct!&quot;) score = 1 else: print(&quot;Nice try! The answer is &quot; + a + &quot;.&quot;) return score #intro: name = input(&quot;Enter your name:&quot;) print(&quot;Hey! &quot; + name) ready = input(&quot;This quiz will have &quot; + str(questions) + &quot; questions that will test your abilities to identify python terms. Are you ready to start this quiz? Answer yes or no.&quot;) if ready == &quot;yes&quot;: print(&quot;Let&#39;s get started!&quot;) else: print(&quot;YOU GOT THIS!&quot;) #question 1: score = score + q_a(&quot;Question 1: What term defines a function or method?&quot;, &quot;def&quot;) #question 2: score = score + q_a(&quot;Question 2: What is a series of characters?&quot;, &quot;string&quot;) #question 3: score = score + q_a(&quot;Question 3: What input prints specified messages on the screen?&quot;, &quot;print&quot;) #question 4: score = score + q_a(&quot;Question 4: What is a value that is either true or false?&quot;, &quot;boolean&quot;) #ending score if score &gt;= 3: print(&quot;Congratulations! You completed this quiz with an amazing score! You scored a: {}/4&quot; .format(score)) else: print(&quot;Congratulations! You completed the quiz. Your score is a: {}/4&quot; .format(score)) . Hey! Claire Let&#39;s get started! Good job! That is correct! Good job! That is correct! Good job! That is correct! Nice try! The answer is boolean. Congratulations! You completed this quiz with an amazing score! You scored a: 3/4 .",
-            "url": "https://clairehzhao.github.io/claire/2022/08/26/pythonquiz.html",
-            "relUrl": "/2022/08/26/pythonquiz.html",
+            "url": "https://clairehzhao.github.io/claire/python/week1/jupyter/2022/08/26/pythonquiz.html",
+            "relUrl": "/python/week1/jupyter/2022/08/26/pythonquiz.html",
             "date": " • Aug 26, 2022"
         }
         
