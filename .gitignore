@@ -12,3 +12,8 @@ _notebooks/.ipynb_checkpoints
 .netlify
 .tweet-cache
 __pycache__
+_posts/2022-08-20-First-Post.md
+_posts/2022-08-26-pythonquiz.md
+_posts/2022-08-27-bashinstallcheck.md
+_posts/2022-09-04-listsdictionaryiteration.md
+_posts/2022-08-29-TP120-python_lists.md
