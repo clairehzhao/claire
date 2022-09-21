@@ -1,6 +1,6 @@
 ---
-title: Group Colaboration
-description: Colaboration used throughout the week for week 4
+title: Group Collaboration
+description: Collaboration used throughout the week for week 4
 layout: post
 comments: true
 toc: true
