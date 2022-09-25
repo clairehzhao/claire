@@ -7,7 +7,7 @@ toc: true
 categories: [week5, markdown]
 ---
 # Scrum Board
-! [scrum board](https://cdn.discordapp.com/attachments/806618712056528906/1023670359096045568/image0.jpg)
+![scrum board](https://cdn.discordapp.com/attachments/806618712056528906/1023670359096045568/image0.jpg)
 
 # Agile Methodology Notes
 1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
