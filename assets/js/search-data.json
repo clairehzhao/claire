@@ -184,6 +184,17 @@
 
   
       ,"page3": {
+          "title": "JavaScript",
+          "content": "Jupyter Notebook that shows personal usage of Jupyter JavaScript Kernel . Link . Post that uses HTML fragments and JavaScript data to build a table . Link .",
+          "url": "https://clairehzhao.github.io/claire/JavaScript/",
+          "relUrl": "/JavaScript/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page4": {
           "title": "Progress",
           "content": "Week # Link Learning . Week #0 | Tools Setup | Learned to create personal fastpages, created markdown post, created jupyter notebook post, and learned to use VSCODE. | . Week #1 | Intro Python, Jupyter, Fastpages | Made a quiz using python, customized front page, created a productive blog, Bash tools check. | . Week #2 | Data Abstraction | Temporarily changed remote theme, changed to pink mode, created and edited new pages, using python to make a quiz that stores lists, and coding a python for loop. | . Week #3 | Creative Development | Created a quiz using code.org and blogged about experience and planning. | .",
           "url": "https://clairehzhao.github.io/claire/progress/",
@@ -213,7 +224,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://clairehzhao.github.io/claire/robots.txt",
