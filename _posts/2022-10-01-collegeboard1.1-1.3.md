@@ -8,4 +8,4 @@ categories: [week6, markdown]
 ---
 
 # Proof of completion of 1.1-1.3 on College Board
-! [college board image](https://cdn.discordapp.com/attachments/806618712056528906/1026227402705211553/IMG_7763.jpg)
+![college board image](https://cdn.discordapp.com/attachments/806618712056528906/1026227402705211553/IMG_7763.jpg)
