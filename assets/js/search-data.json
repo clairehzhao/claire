@@ -227,7 +227,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "Hey! My name is Claire Zhao, and I am a sophomore at Del Norte High School. . (% include nav_frotend.html %) .",
+          "content": "(% include nav_frotend.html %) . Hey! My name is Claire Zhao, and I’m a sophomore at Del Norte High School. .",
           "url": "https://clairehzhao.github.io/claire/about/",
           "relUrl": "/about/",
           "date": ""
@@ -251,7 +251,7 @@
   
       ,"page4": {
           "title": "Progress",
-          "content": "Week # Link Learning . Week #0 | Tools Setup | Learned to create personal fastpages, created markdown post, created jupyter notebook post, and learned to use VSCODE. | . Week #1 | Intro Python, Jupyter, Fastpages | Made a quiz using python, customized front page, created a productive blog, Bash tools check. | . Week #2 | Data Abstraction | Temporarily changed remote theme, changed to pink mode, created and edited new pages, using python to make a quiz that stores lists, and coding a python for loop. | . Week #3 | Creative Development | Created a quiz using code.org and blogged about experience and planning. | . Week #4 | Python Web Server | Learned about collaboration through College Board, took notes on Pyschology and The Good Life, ran a Python Web Server locally, and ran a Fastpages Web Sever locally | . Week #5 | UI Starters | Brainstormed team project, worked on group flask, personalized individual flask, used JavaScript to create table, used JavaScript for math, and created scrum board | .",
+          "content": "Week # Link Learning . Week #0 | Tools Setup | Learned to create personal fastpages, created markdown post, created jupyter notebook post, and learned to use VSCODE. | . Week #1 | Intro Python, Jupyter, Fastpages | Made a quiz using python, customized front page, created a productive blog, Bash tools check. | . Week #2 | Data Abstraction | Temporarily changed remote theme, changed to pink mode, created and edited new pages, using python to make a quiz that stores lists, and coding a python for loop. | . Week #3 | Creative Development | Created a quiz using code.org and blogged about experience and planning. | . Week #4 | Python Web Server | Learned about collaboration through College Board, took notes on Pyschology and The Good Life, ran a Python Web Server locally, and ran a Fastpages Web Sever locally | . Week #5 | UI Starters | Brainstormed team project, worked on group flask, personalized individual flask, used JavaScript to create table, used JavaScript for math, and created a scrum board | .",
           "url": "https://clairehzhao.github.io/claire/progress/",
           "relUrl": "/progress/",
           "date": ""
@@ -270,7 +270,7 @@
   
       ,"page8": {
           "title": "Submenu",
-          "content": "Jupyter Notebook that shows personal usage of Jupyter JavaScript Kernel . Link . Post that uses HTML fragments and JavaScript data to build a table . Link .",
+          "content": "Jupyter Notebook showing personal usage of Jupyter JavaScript Kernel . Link . Post that uses HTML fragments and JavaScript data to build a table . Link .",
           "url": "https://clairehzhao.github.io/claire/Submenu/",
           "relUrl": "/Submenu/",
           "date": ""
