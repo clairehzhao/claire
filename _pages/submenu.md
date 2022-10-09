@@ -3,7 +3,7 @@ layout: page
 title: Submenu
 permalink: /Submenu/
 ---
-Jupyter Notebook that shows personal usage of Jupyter JavaScript Kernel
+Jupyter Notebook showing personal usage of Jupyter JavaScript Kernel
 
 [Link](https://clairehzhao.github.io/claire/markdown/week5/jupyter/javascript/2022/09/25/javascriptmath.html)
 
