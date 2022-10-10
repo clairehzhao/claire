@@ -220,6 +220,17 @@
         
     
   
+    
+        ,"post20": {
+            "title": "College Board Project Program Design",
+            "content": "Row 1: Program Purpose and Function . Input: Artist Name and Album . Output: Album duration, album song names, number of songs, album cover photo The purpose of this program is to provide users with data about their favorite artists including their albums, songs, and album duration and allow them to choose their favorite artists. . Row 2: Data Abstraction . Data about song and artists stored in dictionary which is retrieved using API . Row 3: Managing Complexity . use a function to read user input and only provide wanted album information allowing user to use favorites tab to organize the artists they enjoy . Row 4: Procedural Abstraction . using artist (album), retrieve only wanted data from the dictionary. call developed function to run based on user input. . Row 5: Algorithm Implementation . develop algorithim to count number of songs in album given API data algorithm to create ‘favorite artists’ tab, where users can select their favorite artists to be saved in a seperate section of the application . Row 6: Testing . Input multiple artists and album. See if each selected data type displays proper data. Add artists to ‘favorites’ and see if that data is stored . Screens . .",
+            "url": "https://clairehzhao.github.io/claire/week7/markdown/2002/10/07/projectplanning.html",
+            "relUrl": "/week7/markdown/2002/10/07/projectplanning.html",
+            "date": " • Oct 7, 2002"
+        }
+        
+    
+  
 
   
   
