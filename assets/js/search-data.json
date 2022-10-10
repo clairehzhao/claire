@@ -227,7 +227,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "(% include nav_frotend.html %) . Hey! My name is Claire Zhao, and I’m a sophomore at Del Norte High School. .",
+          "content": "| Example API | . Hey! My name is Claire Zhao, and I’m a sophomore at Del Norte High School. .",
           "url": "https://clairehzhao.github.io/claire/about/",
           "relUrl": "/about/",
           "date": ""
