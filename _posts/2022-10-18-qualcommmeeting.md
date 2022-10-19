@@ -17,7 +17,7 @@ categories: [week9, markdown]
 - The four pillars needed to build wifi networks:
     - connectivity
     - intelligence
-    - interatction
+    - interaction
     - security
 - Remember:
     - lead from any chair
