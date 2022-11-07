@@ -8,9 +8,9 @@ categories: [week12, markdown]
 ---
 
 ## Night at the Museum
-![groupphoto](https://cdn.discordapp.com/attachments/806618712056528906/1039300235341602917/IMG_0635.jpg)
+![groupphoto](https://cdn.discordapp.com/attachments/806618712056528906/1039300235341602917/IMG_0635.jpg =x100)
 
 ## Getting locked into the sound booth
-![soundbooth](https://cdn.discordapp.com/attachments/806618712056528906/1039303395724513360/IMG_3068.jpg)
+![soundbooth](https://cdn.discordapp.com/attachments/806618712056528906/1039303395724513360/IMG_3068.jpg =x100)
 
 I started off the night getting locked into the sound booth...
