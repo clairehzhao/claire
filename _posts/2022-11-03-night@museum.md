@@ -27,4 +27,4 @@ I tried to walk around in the APCSA room to learn from them
 Here are some of the things that I observed:
 - all of the projects were very personal and usable
 - projects had functions that were good for day-to-day use
--  
+- they implemented other subjects like math and science into their project
