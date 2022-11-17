@@ -41,7 +41,7 @@ type: pbl
             </tr>
             </table>
         </div>
-        <div id="color">test</div>
+        <div id="color">color</div>
         <div class="col-12">
             {% comment %}Liquid for loop includes last number, thus the Minus{% endcomment %}
             {% assign bits = BITS | minus: 1 %} 
