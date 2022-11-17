@@ -2,7 +2,7 @@
 title: Binary Math Hacks
 layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
-permalink: /frontend/binary
+permalink: /frontend/binary-color
 image: /images/binary.png
 categories: [3.B, 3.C, C4.4]
 tags: [html, liquid, javascript]
