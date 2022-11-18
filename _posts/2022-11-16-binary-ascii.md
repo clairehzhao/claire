@@ -1,5 +1,5 @@
 ---
-title: Binary Math ASCII
+title: Binary Conversion ASCII
 layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 
