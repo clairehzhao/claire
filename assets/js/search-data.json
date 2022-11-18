@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Binary Math ASCII",
-            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal ASCII Minus . +1 | 00000000 | 0 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | | | | . 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 | .",
+            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal ASCII Minus . +1 | 00000000 | 0 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | | | | . 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | .",
             "url": "https://clairehzhao.github.io/claire/2022/11/16/binary-ascii.html",
             "relUrl": "/2022/11/16/binary-ascii.html",
             "date": " • Nov 16, 2022"
