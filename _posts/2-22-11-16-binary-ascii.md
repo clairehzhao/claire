@@ -1,20 +1,16 @@
 ---
-title: Binary Math Color
+title: Binary Math ASCII
 layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
-permalink: /frontend/binary-color
-image: /images/binary.png
-categories: [3.B, 3.C, C4.4]
-tags: [html, liquid, javascript]
-week: 10
-type: pbl
+
 ---
 
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
 
-{% assign BITS = 24 %}
+{% assign BITS = 8 %}
+
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
@@ -29,6 +25,7 @@ type: pbl
                 <th>Octal</th>
                 <th>Hexadecimal</th>
                 <th>Decimal</th>
+                <th>ASCII</th>
                 <th>Minus</th>
             </tr>
             <tr>
@@ -37,11 +34,11 @@ type: pbl
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="decimal">0</td>
+                <td id="demo">0</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
             </table>
         </div>
-        <div id="color">color</div>
         <div class="col-12">
             {% comment %}Liquid for loop includes last number, thus the Minus{% endcomment %}
             {% assign bits = BITS | minus: 1 %} 
@@ -59,6 +56,16 @@ type: pbl
                 {% for i in (0..bits) %}
                 <td><input type='text' id="digit{{ i }}" Value="0" size="1" readonly></td>
                 {% endfor %}
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+                <td>8</td>
+                <td>16</td>
+                <td>32</td>
+                <td>64</td>
+                <td>128</td>
             </tr>
             </table>
         </div>
@@ -83,7 +90,6 @@ type: pbl
     }
     // setter for DOM values
     function setConversions(binary) {
-        var color = "#" + parseInt(binary, 2).toString(16);
         document.getElementById('binary').innerHTML = binary;
         // Octal conversion
         document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
@@ -91,8 +97,10 @@ type: pbl
         document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
         // Decimal conversion
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
-        document.getElementById("color").style.backgroundColor = color;
+        //ASCII conversion
+        document.getElementById("demo").innerHTML = String.fromCharCode(parseInt(binary, 2).toString());
     }
+
     //
     function decimal_2_base(decimal, base) {
         let conversion = "";
