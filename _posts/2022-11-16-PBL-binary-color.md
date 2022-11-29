@@ -1,5 +1,5 @@
 ---
-title: Binary Conversion Color
+title: Binary Conversion Color Code
 layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /frontend/binary-color
