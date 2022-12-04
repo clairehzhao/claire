@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Lesson",
-            "content": "",
-            "url": "https://clairehzhao.github.io/claire/2022/12/04/lesson.html",
-            "relUrl": "/2022/12/04/lesson.html",
+            "title": "Unit 3 Lesson 5-7 Hacks and Notes",
+            "content": "Notes: . boolean true or false | . | relational operators mathematical relationship between two variables | a = b | a &gt; b | . | logical operators not (opposite of whatever the data is) | and (evaluate two conditions together and determine if both conditions are met) | or (function only looks to see if one of the conditions is met wthen will) | . | conditionals selection: specific block of coce that will execute depending on the algorithm condition returning true or false | algorithm: finite set of instructions that accomplish a specific task | conditional statement/if-statement: statement that affects the sequence of control by executing certain statments depending on the value of a boolean | . | nested conditionals consists of conditional statements within conditional statements | one inside the other | can have three different conditions | . | . Hacks: . Lesson 3.5 . Explain in your own words what each logical operator does: not: output is the opposite of the input given (ex. given true then NOT would display false) | and: putting two conditions together and seeing if the input meets both conditions (ex. the number 24 must be less than 70 but greater than 20, this would be true) | or: only checks to see if one of the given conditions are met for the input (ex. if money is less than 0 or age is greater than 25 then -1 would end game) | . | Code your own scenario that makes sense for each logical operator | . print(&quot;NOT:&quot;) isSunny = False result = not(isSunny) print(result) # will print true bc opposite of false with not in result print(&quot;&quot;) print(&quot;AND:&quot;) age = 25 height = 5 if age &lt;= 30 and height &gt;= 4: print(&quot;You may proceed.&quot;) # needs to meet both requirements of age and height print(&quot;&quot;) print(&quot;OR:&quot;) age = 20 money = 100 if age &gt;= 18 or money &lt;= 500: print(&quot;You are eligable.&quot;) . NOT: True AND: You may proceed. OR: You are eligable. .",
+            "url": "https://clairehzhao.github.io/claire/week14/jupyter/python/markdown/2022/12/04/lesson.html",
+            "relUrl": "/week14/jupyter/python/markdown/2022/12/04/lesson.html",
             "date": " • Dec 4, 2022"
         }
         
