@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -138,6 +138,7 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#Lesson-3.5">Lesson 3.5 </a></li>
 <li class="toc-entry toc-h3"><a href="#Lesson-3.6">Lesson 3.6 </a></li>
+<li class="toc-entry toc-h3"><a href="#Lesson-3.7">Lesson 3.7 </a></li>
 </ul>
 </li>
 </ul><!--
@@ -330,12 +331,185 @@ You are eligable.
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>input "hey my name is claire"
-output showing the number of vowels in the sentence</p>
+<p>input "hey my name is claire", output showing the number of vowels in the sentence.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Lesson-3.7">
+<a class="anchor" href="#Lesson-3.7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3.7<a class="anchor-link" href="#Lesson-3.7"> </a>
+</h3>
+<ul>
+<li>create 3 different flow charts representing nested statements and transfer them into code</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><img src="https://cdn.discordapp.com/attachments/806618712056528906/1049118422266560522/IMG_3418.jpg" alt="flowchart1"></li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">age1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter an age."</span><span class="p">)</span>
+<span class="n">age2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter an age."</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">age1</span> <span class="o">==</span> <span class="n">age2</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Match!"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">age1</span> <span class="o">&lt;</span> <span class="n">age2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">age1</span> <span class="o">+</span> <span class="s2">" is less than "</span> <span class="o">+</span> <span class="n">age2</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">age1</span> <span class="o">&gt;</span> <span class="n">age2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">age1</span> <span class="o">+</span> <span class="s2">" is greater than "</span> <span class="o">+</span> <span class="n">age2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Success"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>34 is greater than 12
+Success
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><img src="https://cdn.discordapp.com/attachments/806618712056528906/1049111567855271956/IMG_0813.jpg" alt="flowchart2"></li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">houseLocation</span> <span class="o">=</span> <span class="s2">"san diego"</span>
+<span class="n">housePrice</span> <span class="o">=</span> <span class="mi">1000000</span>
+<span class="n">location</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Where is the house you are looking at located?"</span><span class="p">)</span>
+<span class="n">price</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How much is the house?"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">houseLocation</span> <span class="o">==</span> <span class="n">location</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">housePrice</span> <span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">price</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Purchase House"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Not within budget"</span><span class="p">)</span>
+
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">housePrice</span> <span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">price</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Purchase House"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Not within budget or in right location"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Success"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Not within budget
+Success
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><img src="https://cdn.discordapp.com/attachments/806618712056528906/1049143427461304320/IMG_0243.jpg" alt="flowchart3"></li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">testScore</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What did you score on this test?"</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">testScore</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">testScore</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">85</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Great Job! You passed with an amazing score."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Good Job! You passed."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You did not pass."</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Success"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Great Job! You passed with an amazing score.
+Success
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
