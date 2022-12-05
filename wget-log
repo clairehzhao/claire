@@ -1,0 +1,13 @@
+--2022-12-05 13:02:45--  https://raw.githubusercontent.com/TeamORBORB/TeamOrbOrb/master/_notebooks/2022-11-28-Unit_3.8_3.10.ipynb
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Operation timed out.
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... failed: Operation timed out.
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 29798 (29K) [text/plain]
+Saving to: '2022-11-28-Unit_3.8_3.10.ipynb.1'
+
+     0K .......... .......... .........                       100% 32.0M=0.001s
+
+2022-12-05 13:04:19 (32.0 MB/s) - '2022-11-28-Unit_3.8_3.10.ipynb.1' saved [29798/29798]
+
