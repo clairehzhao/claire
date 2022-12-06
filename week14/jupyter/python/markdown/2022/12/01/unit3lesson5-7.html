@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -527,12 +527,34 @@ Success
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sleep</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Did you get more than 7 hours of sleep last night?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">sleep</span> <span class="o">==</span> <span class="s2">"yes"</span><span class="p">:</span>
-    <span class="nb">input</span><span class="p">(</span><span class="s2">"Nice! Did you get more than 9 hours of sleep last night?"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sleep</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How many hours of sleep did you get last night?"</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">sleep</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">7</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">sleep</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">9</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Wow! That is an amazing amount of sleep."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Nice! That is a good amount of sleep."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">sleep</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Oh no, that is not enough sleep."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Okay, that is an average amount of sleep."</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Oh no, that is not enough sleep.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -549,6 +571,43 @@ Success
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">stem</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Do you enjoy taking STEM classes?"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">stem</span> <span class="o">==</span> <span class="s2">"yes"</span><span class="p">:</span>
+    <span class="n">listYes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"AP Calc AB"</span><span class="p">,</span> <span class="s2">"APCSP"</span><span class="p">,</span> <span class="s2">"AP Biology"</span><span class="p">,</span> <span class="s2">"Engineering"</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Great! You should take:"</span><span class="p">,</span> <span class="n">listYes</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">listNo</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"APEL"</span><span class="p">,</span> <span class="s2">"APUSH"</span><span class="p">,</span> <span class="s2">"AP Lit"</span><span class="p">,</span> <span class="s2">"AP Art"</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Okay! You should take:"</span><span class="p">,</span> <span class="n">listNo</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Okay! You should take: ['APEL', 'APUSH', 'AP Lit', 'AP Art']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
