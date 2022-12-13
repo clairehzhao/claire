@@ -540,6 +540,41 @@ Words that start with e: 0
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><!-- function --></p>
+<p>var a = 7</p>
+<p>var b = 13</p>
+<button id="enter" onclick="add(a,b)">add</button> 
+<p id="resultadd"></p>
+<button id="enter" onclick="subtract(a,b)">subtract</button> 
+<p id="resultsub"></p>
+<button id="enter" onclick="multiply(a,b)">multiply</button> 
+<p id="resultmult"></p>
+<button id="enter" onclick="divide(a,b)">divide</button> 
+<p id="resultdiv"></p>
+<p><!-- javascript --></p>
+<script>
+    function add(a,b) {
+        document.getElementById("resultadd").innerHTML = a + b // math
+    }
+    function subtract(a,b) {
+        document.getElementById("resultsub").innerHTML = a - b
+    }
+    function multiply(a,b) {
+        document.getElementById("resultmult").innerHTML = a * b // math
+    }
+    function divide(a,b) {
+        document.getElementById("resultdiv").innerHTML = a / b // math
+    }
+    // variables are defined
+    var a = 7
+    var b = 13
+</script>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
