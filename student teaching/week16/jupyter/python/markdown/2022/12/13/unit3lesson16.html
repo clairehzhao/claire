@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -141,6 +141,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Hack-#1">Hack #1 </a></li>
 <li class="toc-entry toc-h3"><a href="#Hack-#2">Hack #2 </a></li>
 <li class="toc-entry toc-h3"><a href="#Hack-#3">Hack #3 </a></li>
+<li class="toc-entry toc-h3"><a href="#Hack-#4">Hack #4 </a></li>
 </ul>
 </li>
 </ul><!--
@@ -336,10 +337,87 @@ You scored:  6 /6
 <ul>
 <li>Describe the rolling dice simulation</li>
 </ul>
+<p>What makes it a simulation?</p>
+<p>This is a simulation because the computer is rolling th dice for you instead of rolling dice by yourself. This code is producing the number from the dice roll with the random numbers.</p>
+<p>What are its advantages and disadvantages?</p>
+<p>Advantage: quicker, more efficient, don't have to buy dice</p>
+<p>Disadvantage: not as hands on/different experience</p>
+<p>In your opinion, would an experiment be better in this situation?</p>
+<p>An experiment would not necessariily be better because in the simulation you are able to get numbers quickly and instantly</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Hack-#4">
+<a class="anchor" href="#Hack-#4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack #4<a class="anchor-link" href="#Hack-#4"> </a>
+</h3>
+<ul>
+<li>Add a feature to the dice roll code:<ul>
+<li>changed to a 10 sided dice</li>
+<li>numbers sorted from least to greatest</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">parse_input</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">input_string</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">"1"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span><span class="s2">"4"</span><span class="p">,</span> <span class="s2">"5"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">}:</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter a number from 1 to 6."</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">SystemExit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">roll_dice</span><span class="p">(</span><span class="n">num_dice</span><span class="p">):</span>
+    <span class="n">roll_results</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_dice</span><span class="p">):</span>
+        <span class="n">roll</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="n">roll_results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">roll</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">roll_results</span>
+
+
+<span class="n">num_dice_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How many dice do you want to roll? [1-6] "</span><span class="p">)</span>
+<span class="n">num_dice</span> <span class="o">=</span> <span class="n">parse_input</span><span class="p">(</span><span class="n">num_dice_input</span><span class="p">)</span>
+<span class="n">roll_results</span> <span class="o">=</span> <span class="n">roll_dice</span><span class="p">(</span><span class="n">num_dice</span><span class="p">)</span>
+<span class="n">roll_results</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"here are the numbers you rolled from least to greatest:"</span><span class="p">,</span> <span class="n">roll_results</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>here are the numbers you rolled from least to greatest: [2, 4, 6, 7, 8, 8]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
