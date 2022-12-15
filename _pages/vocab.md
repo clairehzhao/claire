@@ -21,8 +21,8 @@ permalink: /vocab/
 [Unit 3 Lesson 17-18](https://clairehzhao.github.io/claire/student%20teaching/week16/jupyter/python/markdown/2022/12/14/unit3lesson17-18.html)
 
 
-
-## Unit 2... Binary/Data Terms
+## Vocabulary:
+### Unit 2... Binary/Data Terms
 - bits: The smallest unit of data that a computer can process and store. A bit is always in one of two physical states, similar to an on/off light switch. The state is represented by a single binary value, usually a 0 or 1.
 
 - bytes: A byte is a unit of data that is eight binary digits long. A byte is the unit most computers use to represent a character such as a letter, number or typographic symbol. 00000000 - 11111111
@@ -43,7 +43,7 @@ permalink: /vocab/
 
 - Lossless: restores and rebuilds file data in its original form after the file is decompressed
 
-## Unit 3... Algorithm/Programming Terms
+### Unit 3... Algorithm/Programming Terms
 - variable: used to store information to be used and referred to
 
 ![variable](https://cdn.discordapp.com/attachments/806618712056528906/1052995163959595018/IMG_5199.jpg)
