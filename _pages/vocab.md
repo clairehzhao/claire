@@ -47,6 +47,8 @@ permalink: /vocab/
 
 ![operators](https://cdn.discordapp.com/attachments/806618712056528906/1052996537602560020/IMG_5132.jpg)
 
+- algorithm: commands that do a certain task
+
 - sequence: the order in which the statements are executed
 
 - selection: a section of code is run only if a condition is met.
@@ -56,3 +58,48 @@ permalink: /vocab/
 ![iteration](https://cdn.discordapp.com/attachments/806618712056528906/1050887849278455808/IMG_0417.jpg)
 
 - characters: a display unit of information equivalent to one alphabetic letter or symbol
+
+- expressions: combination of operators/operands
+
+truth tables
+
+- AND: 1 1
+- OR: 0 1, 1 0, 1 1
+- XOR: 0 0, 1 1
+- NOT: 0
+
+- length: number of characters in a string
+
+- concatenation: combining two things
+
+- upper/Lower: change case
+
+- traversing Strings: use index
+
+- if: do an action when something is true
+
+- elif: first condition false, test another
+
+- else: action when first condition false
+
+- nested selection: condition inside condition
+
+![if](https://cdn.discordapp.com/attachments/806618712056528906/1053001319880863824/IMG_3764.jpg)
+
+- for: action for each x in y
+
+- while: loops as long as condition true
+ 
+- break: end loop
+
+- continue: keep loop
+
+![forloop](https://cdn.discordapp.com/attachments/806618712056528906/1053002524828901416/IMG_2430.jpg)
+
+- def: defining a function to do a procedure
+
+- parameters: values given to a function to work with
+
+- return: brings variables out of function after running
+
+![def](https://cdn.discordapp.com/attachments/806618712056528906/1053003316608643092/IMG_7545.jpg)
