@@ -1,8 +1,26 @@
 ---
 layout: page
-title: Vocabulary
+title: Notes and Vocabulary
 permalink: /vocab/
 ---
+## Notes:
+[Unit 3 Lesson 1-2](https://clairehzhao.github.io/claire/student%20teaching/week14/jupyter/python/markdown/2022/11/28/unit3lesson1-2.html)
+
+[Unit 3 Lesson 3-4](https://clairehzhao.github.io/claire/student%20teaching/week14/jupyter/python/markdown/2022/11/29/unit3lesson3-4.html)
+
+[Unit 3 Lesson 5-7](https://clairehzhao.github.io/claire/student%20teaching/week14/jupyter/python/markdown/2022/12/01/unit3lesson5-7.html)
+
+[Unit 3 Lesson 8 & 10](https://clairehzhao.github.io/claire/student%20teaching/week15/jupyter/python/markdown/2022/12/05/unit3lesson8&10.html)
+
+[Unit 3 Lesson 12-13](https://clairehzhao.github.io/claire/student%20teaching/week15/jupyter/python/markdown/2022/12/08/unit3lesson12-13.html)
+
+[Unit 3 Lesson 14-15](https://clairehzhao.github.io/claire/student%20teaching/week16/jupyter/python/markdown/2022/12/12/unit3lesson14-15.html)
+
+[Unit 3 Lesson 16](https://clairehzhao.github.io/claire/student%20teaching/week16/jupyter/python/markdown/2022/12/13/unit3lesson16.html)
+
+[Unit 3 Lesson 17-18](https://clairehzhao.github.io/claire/student%20teaching/week16/jupyter/python/markdown/2022/12/14/unit3lesson17-18.html)
+
+
 
 ## Unit 2... Binary/Data Terms
 - bits: The smallest unit of data that a computer can process and store. A bit is always in one of two physical states, similar to an on/off light switch. The state is represented by a single binary value, usually a 0 or 1.
