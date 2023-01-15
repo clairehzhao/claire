@@ -433,8 +433,8 @@
         ,"post39": {
             "title": "Bash Installation Check",
             "content": "%%bash #Check version of Conda conda_version=$(conda -V 2&gt;&amp;1 | sed -n &#39;;s/.*conda (.* )/ 1/p;&#39;) #conda_version=$(conda -V 2&gt;&amp;1 | sed -n &#39;;s/.*conda &quot; (.* ) . (.* ) ..*&quot;.*/ 1 2/p;&#39;) #conda_version=&#39;conda -V | sed -n &#39;;s/conda &quot; (.* ) . (.* ) ..*&quot;.*/ 1 2/p;&#39; #echo $conda_version #Check version of Python python_version=`python -c &#39;import sys; version=sys.version_info[:3]; print(&quot;{0}.{1}.{2}&quot;.format(*version))&#39;` #Print using conditional statement if [ $conda_version &gt; &quot;0&quot; ]; then echo &quot;Conda version: &quot;$conda_version else echo &quot;Conda not installed&quot; fi if [ $python_version &gt; &quot;0&quot; ]; then echo &quot;Python version: &quot;$python_version else echo &quot;Python not installed&quot; fi . Conda version: 4.14.0 Python version: 3.9.12 .",
-            "url": "https://clairehzhao.github.io/claire/bash/week1/jupyter/2022/08/27/bashinstallcheck.html",
-            "relUrl": "/bash/week1/jupyter/2022/08/27/bashinstallcheck.html",
+            "url": "https://clairehzhao.github.io/claire/week1/jupyter/2022/08/27/bashinstallcheck.html",
+            "relUrl": "/week1/jupyter/2022/08/27/bashinstallcheck.html",
             "date": " • Aug 27, 2022"
         }
         
