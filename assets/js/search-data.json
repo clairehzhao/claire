@@ -517,6 +517,17 @@
         
     
   
+    
+        ,"post47": {
+            "title": "CPT Feature Outline",
+            "content": "Feature Description . The feature I have for our project is the ovulation cycle tracker. . Purpose and Function . The purpose of this feature is to allow for women to see when they will be most ovulated. They are able to see how long they have been ovulated and how much longer they will be ovulated for. The feature is able to function by connecting with the period tracking page. It is able to use the data that is inputted from the user of their period (last period day, length, and typical menstrual cycle length) to output the days they user will be most ovulated. . Code Plan . Data Abstraction . This feature can use data abstraction by storing the values that the user inputs for their menstrual cycle. The feature will have to be able to store multiple different values and being able to store this will be easier to access them when finding the ovulation period. . Managing Complexity . To manage the complexity of this program I will use a list to help. This list will be used so that it can access and store the data from the user input. By having this stored then we can access them to output the future days of ovulation . Procedural Abstraction . This feature can take the data from the list and object that is made. This will then help to create and calculate the days of ovulation. The parameters that will be added is the days of starting and ending ovulation and how long they will be ovulated for. . Algorithm Implementation . Sequencing, selection, and iteration will all be used in this feature. Sequencing will be used by outputing the dates that they will be ovulated, the feature must carry out the steps to produce the dates. Then selection can be used because the user will be able to see the days that they are ovulated for multiple months and the feature will have to select that. Iteration will be used because the program will have to be repeated for each month with new data from the previous month. . Testing . The first call will be inputting the date of September 8th with a 30 day cycle and a 4 day period length. There will be a default output of the next month, which means that from September 24-29 will be highlighted in blue. The second call will have the user inputting September 8th with a 30 day cycle and a 4 day period length again. This time they will choose how many months to be shown. The user can click 3 months and have September 24-29, November 1-6, and December 3-8th highlighted in blue. . Video Plan . For the video I will input the date (December 30th) for the date of the last period, 4 days for the length, and 30 days for the usual menstrual cycle length into the menstrual cycle page. Then clicking to the ovulation page, there will be the data that was inputted with the days of ovulation highlighted in blue. Then I will look at a couple future months to ensure that they are all working. .",
+            "url": "https://clairehzhao.github.io/claire/week20/markdown/2022/01/29/cpt.html",
+            "relUrl": "/week20/markdown/2022/01/29/cpt.html",
+            "date": " • Jan 29, 2022"
+        }
+        
+    
+  
 
   
   
