@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      4 min read
     
 </span></p>
 
@@ -126,9 +126,11 @@ window.onload = wrap_img;
 
 <p>3.b.i</p>
 
-<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1080044141217599558/IMG_6820.jpg" alt="list1">
-<img src="https://cdn.discordapp.com/attachments/806618712056528906/1080044164709875752/IMG_1197.jpg" alt="list2">
-<img src="https://cdn.discordapp.com/attachments/806618712056528906/1080044175854161920/IMG_5780.jpg" alt="list3"></p>
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1080044141217599558/IMG_6820.jpg" alt="list1"></p>
+
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1080044164709875752/IMG_1197.jpg" alt="list2"></p>
+
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1080044175854161920/IMG_5780.jpg" alt="list3"></p>
 
 <p>3.b.ii</p>
 
@@ -152,16 +154,49 @@ window.onload = wrap_img;
 
 <p>3.c.i</p>
 
-<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1080044135689498684/IMG_6698.jpg" alt="">
-<img src="https://cdn.discordapp.com/attachments/806618712056528906/1080059649828606002/IMG_1810.jpg" alt=""></p>
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1080044135689498684/IMG_6698.jpg" alt=""></p>
+
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1080059649828606002/IMG_1810.jpg" alt=""></p>
 
 <p>3.c.ii</p>
 
 <p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1080060699495112764/IMG_9089.jpg" alt=""></p>
 
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1080075811635335288/IMG_3266.jpg" alt=""></p>
+
 <p>3.c.iii</p>
 
-<p>There are three procedures being shown in this program. There is create, read, and delete. First the</p>
+<p>There are three procedures being shown in this program. There is create, read, and delete. First the ovulation function takes in the user period date, period cycle, and menstrual cycle and then stores the parameter in a json dictionary. The data that is in the dictionary is then fetched into each separate function (create, read, delete). The create function is used to have the user input the new data that is then passed to the read function. The read function is used to display all of the data that the user inputs onto the table for them to see. The delete function allows the user to delete all of the data in the database from the ovulation function.</p>
+
+<p>Algorithmic Implementation</p>
+
+<p>3.c.iv</p>
+
+<p>Iteration is used in the for loop that is used for the adding row in the table when reading the data that is in the database. This data that is in the database is read using the for loop until all the data is added to the table and then displayed. The repeat of all of the users in the database is the iteration aspect being shown.</p>
+
+<p>The program is using sequencing in the validation feature because of the if else statement that is being used. The if else statement creates the user in different orders depending on the requirements that they must meet.</p>
+
+<p>This validation feature also has selection in it because it has to make a decision if the user should be created. The user can only be created if the period length and the menstrual cycle is a number. The function has to select if the user is able to be made with this knowledge.</p>
+
+<p>Testing</p>
+
+<p>3.d.i</p>
+
+<p>First call: The first call that I made is a create and fetch using the _Create and _Read function to save the period date, period length, and menstrual cycle legth from the user. The inputs were “02/15/23”, “5”, and “30”. The data is then appended to the backend database, then displayed on the front end in the table that is shown.</p>
+
+<p>Second Call: The second call is a create and fetch from the _Create and _Read function that is used to save the period date, period length, and menstrual cycle legth from the user, but in this case the validation function is implemented and they are not able to append to the backend. The inputs are “02/24/2023”, “c”, “f”. Since these last two values are not numbers they are not able to read and add to the table in the frontend.</p>
+
+<p>3.d.ii</p>
+
+<p>First call tested conditions: The first call tests the condition that the period date is a date from the calendar and that period length and menstrual cycle legth are numbers. If this is true, the create_user() function will execute.</p>
+
+<p>Second call tested conditions: The second call tests the validate function to make sure that the period length and menstrual cycle length are numbers. In this case it failed and the create_user() function did not execute.</p>
+
+<p>3.d.iii</p>
+
+<p>Results of the first call: The result of the first call that the period date, period length, and menstrual cycle legth are inputted into the backend database and shown on the frontend. They are all valid values that can be used.</p>
+
+<p>Results of the second call: The result of the second call is that the error message will display that tells the user to input valid values for the period date, period length, and menstrual cycle legth.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
