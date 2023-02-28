@@ -1,6 +1,6 @@
 ---
 title: Binary Conversions Hacks
-layout: default
+layout: base
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 
 ---

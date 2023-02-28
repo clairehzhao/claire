@@ -1,6 +1,6 @@
 ---
 title: Binary Conversion Color Code
-layout: default
+layout: base
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /frontend/binary-color
 image: /images/binary.png
