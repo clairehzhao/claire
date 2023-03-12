@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      13 min read
     
 </span></p>
 
@@ -226,16 +226,30 @@ window.onload = wrap_img;
 <p>File paths are different on Windows versus Mac and Linux.  This can cause problems in a project as you work and deploy on different Operating Systems (OS's), pathlib is a solution to this problem.</p>
 <ul>
 <li>What are commands you use in terminal to access files?</li>
-<li>What are the command you use in Windows terminal to access files?</li>
-<li>What are some of the major differences?</li>
 </ul>
 </blockquote>
+<p>cd to change directory</p>
+<ul>
+<li>What are the command you use in Windows terminal to access files?</li>
+</ul>
+<p>dir to display the folders and files in the current directory</p>
+<ul>
+<li>What are some of the major differences?</li>
+</ul>
+<p>The commands used to navigate the file system are different. On Mac, the cd command is used to change the current directory, while on Windows, it is also used but with different syntax (cd followed by the directory name or path). Similarly, on Mac, the ls command is used to list the contents of a directory, while on Windows, it is dir.</p>
 <p>Provide what you observed, struggled with, or leaned while playing with this code.</p>
 <ul>
 <li>Why is path a big deal when working with images?</li>
+</ul>
+<p>Path is a big deal when working with images because it is the location where the image file is stored on the computer. When working with images, you often need to specify the path to the image file in order to open, edit, or save the file.</p>
+<ul>
 <li>How does the meta data source and label relate to Unit 5 topics?</li>
+</ul>
+<p>Metha data source and label are a way to give credit to sources and in Unit 5 we talk about legal and ethical concerns which giving credit relates to.</p>
+<ul>
 <li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?</li>
 </ul>
+<p>IPython has many different features for Pandas including Tab Completion and History. For images IPython is able to display images, process images, and create interactive visuals.</p>
 
 </div>
 </div>
@@ -350,10 +364,12 @@ window.onload = wrap_img;
 </h3>
 <blockquote>
 <p>Image formats (JPG, PNG) are often called <strong>*Binary File formats</strong>, it is difficult to pass these over HTTP.   Thus, <a href="https://en.wikipedia.org/wiki/Base64">base64</a> converts binary encoded data (8-bit, ASCII/Unicode) into a text encoded scheme (24 bits, 6-bit Base64 digits).  Thus base64 is used to transport and embed binary images into textual assets such as HTML and CSS.- How is Base64 similar or different to Binary and Hexadecimal?</p>
+</blockquote>
+<p>The similarities between the three are they represent data in a different format than plain text and can all be used to represent any type of data. The difference is that binary represents data using only two digits (0 and 1) in base 2. Hexadecimal represents data using 16 digits (0-9 and A-F) in base 16. Base64 represents data using 64 characters (A-Z, a-z, 0-9, +, and /) in base 64.</p>
 <ul>
 <li>Translate first 3 letters of your name to Base64.</li>
 </ul>
-</blockquote>
+<p>"Cla" = "Q2xh"</p>
 <h3 id="numpy">
 <a class="anchor" href="#numpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>numpy<a class="anchor-link" href="#numpy"> </a>
 </h3>
@@ -366,11 +382,19 @@ window.onload = wrap_img;
 <blockquote>
 <p>Input and Output (I/O) is a fundamental of all Computer Programming. Input/output (I/O) buffering is a technique used to optimize I/O operations.  In large quantities of data, how many frames of input the server currently has queued is the buffer.  In this example, there is a very large picture that lags.</p>
 <ul>
-<li>Where have you been a consumer of buffering?  </li>
-<li>From your consumer experience, what effects have you experienced from buffering?  </li>
-<li>How do these effects apply to images?</li>
+<li>Where have you been a consumer of buffering?</li>
 </ul>
 </blockquote>
+<p>There is buffering in many different places. Some include YouTube, Synergy, and Canvas
+<img src="https://cdn.discordapp.com/attachments/806618712056528906/1084612784614019102/IMG_8072.png" alt="buffer"></p>
+<ul>
+<li>From your consumer experience, what effects have you experienced from buffering?</li>
+</ul>
+<p>When buffering occurs it causes the user or viewer to become less engaged in what they are looking at. It creates a worse experience leading to less satisfaction from the user.</p>
+<ul>
+<li>How do these effects apply to images?</li>
+</ul>
+<p>When the images are too large or have high resolution it can cause the images to buffer. By reducing the size of the images it will help with the buffering.</p>
 
 </div>
 </div>
@@ -385,11 +409,21 @@ window.onload = wrap_img;
 <p>Introduction to creating meta data and manipulating images.  Look at each procedure and explain the the purpose and results of this program.  Add any insights or challenges as you explored this program.</p>
 <ul>
 <li>Does this code seem like a series of steps are being performed?</li>
-<li>Describe Grey Scale algorithm in English or Pseudo code?</li>
-<li>Describe scale image?  What is before and after on pixels in three images?</li>
-<li>Is scale image a type of compression?  If so, line it up with College Board terms described?</li>
 </ul>
 </blockquote>
+<p>Yes this code seems like a series of steps are being performed. The image is first taken from the file, then it is scaled, then convert to base64, then pixels are altered to how we choose.</p>
+<ul>
+<li>Describe Grey Scale algorithm in English or Pseudo code?</li>
+</ul>
+<p>Grey scale takes the image that is in color, RBG, and calculates the average of the different color values to change them into grey. The image color changes but the image does not.</p>
+<ul>
+<li>Describe scale image?  What is before and after on pixels in three images?</li>
+</ul>
+<p>When you scale an image you resize the image. The pixels stay the same as they were before the image was scaled.</p>
+<ul>
+<li>Is scale image a type of compression?  If so, line it up with College Board terms described?</li>
+</ul>
+<p>Scale image is a type of compression as the photo is compressed byt it is not a lossy compression. None of the data is lost, it reduces the data.</p>
 
 </div>
 </div>
@@ -501,6 +535,29 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[1], line 3</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> from IPython.display import HTML, display
+<span class="ansi-green-intense-fg ansi-bold">      2</span> from pathlib import Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
+<span class="ansi-green-fg">----&gt; 3</span> from PIL import Image as pilImage # as pilImage is used to avoid conflicts
+<span class="ansi-green-intense-fg ansi-bold">      4</span> from io import BytesIO
+<span class="ansi-green-intense-fg ansi-bold">      5</span> import base64
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'PIL'</pre>
+</div>
+</div>
+
 </div>
 </div>
 
