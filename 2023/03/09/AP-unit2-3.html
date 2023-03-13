@@ -13,14 +13,12 @@
 <link rel="canonical" href="https://clairehzhao.github.io/claire/2023/03/09/AP-unit2-3.html" />
 <meta property="og:url" content="https://clairehzhao.github.io/claire/2023/03/09/AP-unit2-3.html" />
 <meta property="og:site_name" content="claire’s apcsp blog" />
-<meta property="og:image" content="https://clairehzhao.github.io/claire/images/python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-03-09T00:00:00-06:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://clairehzhao.github.io/claire/images/python.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Unit 2.3 Extracting Information from Data, Pandas" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-09T00:00:00-06:00","datePublished":"2023-03-09T00:00:00-06:00","description":"Data connections, trends, and correlation. Pandas is introduced as it could be valuable for PBL, data validation, as well as understanding College Board Topics.","headline":"Unit 2.3 Extracting Information from Data, Pandas","image":"https://clairehzhao.github.io/claire/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://clairehzhao.github.io/claire/2023/03/09/AP-unit2-3.html"},"url":"https://clairehzhao.github.io/claire/2023/03/09/AP-unit2-3.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-09T00:00:00-06:00","datePublished":"2023-03-09T00:00:00-06:00","description":"Data connections, trends, and correlation. Pandas is introduced as it could be valuable for PBL, data validation, as well as understanding College Board Topics.","headline":"Unit 2.3 Extracting Information from Data, Pandas","mainEntityOfPage":{"@type":"WebPage","@id":"https://clairehzhao.github.io/claire/2023/03/09/AP-unit2-3.html"},"url":"https://clairehzhao.github.io/claire/2023/03/09/AP-unit2-3.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/claire/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://clairehzhao.github.io/claire/feed.xml" title="claire's apcsp blog" /><link rel="shortcut icon" type="image/x-icon" href="/claire/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -81,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      15 min read
+      19 min read
     
 </span></p>
 
@@ -139,7 +137,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#Example-of-larger-data-set">Example of larger data set </a></li>
 <li class="toc-entry toc-h1"><a href="#APIs-are-a-Source-for-Writing-Programs-with-Data">APIs are a Source for Writing Programs with Data </a></li>
-<li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a>
+<li class="toc-entry toc-h1"><a href="#Hacks-Assignment">Hacks Assignment </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Hack-Helpers">Hack Helpers </a>
 <ul>
@@ -147,6 +145,12 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Machine-Learning-Visit-Tutorials-Point">Machine Learning Visit Tutorials Point </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Hacks-Completed">Hacks Completed </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#College-Board-Practice">College Board Practice </a></li>
+<li class="toc-entry toc-h2"><a href="#Implementing-into-my-own-PBL-project">Implementing into my own PBL project </a></li>
 </ul>
 </li>
 </ul><!--
@@ -247,8 +251,8 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'files/grade.json'</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="c1"># What part of the data set needs to be cleaned?</span>
-<span class="c1"># From PBL learning, what is a good time to clean data?  Hint, remember Garbage in, Garbage out?</span>
+<span class="c1"># What part of the data set needs to be cleaned? year in school column 4 and 8, student id column 9</span>
+<span class="c1"># From PBL learning, what is a good time to clean data?  Hint, remember Garbage in, Garbage out? at the end</span>
 </pre></div>
 
     </div>
@@ -854,8 +858,8 @@ None
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Hacks">
-<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+<h1 id="Hacks-Assignment">
+<a class="anchor" href="#Hacks-Assignment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks Assignment<a class="anchor-link" href="#Hacks-Assignment"> </a>
 </h1>
 <blockquote>
 <p>Early Seed award</p>
@@ -1395,6 +1399,228 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 Please also refer to the documentation for alternative solver options:
     https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
   n_iter_i = _check_optimize_result(
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hacks-Completed">
+<a class="anchor" href="#Hacks-Completed" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks Completed<a class="anchor-link" href="#Hacks-Completed"> </a>
+</h1>
+<h2 id="College-Board-Practice">
+<a class="anchor" href="#College-Board-Practice" aria-hidden="true"><span class="octicon octicon-link"></span></a>College Board Practice<a class="anchor-link" href="#College-Board-Practice"> </a>
+</h2>
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1084671560201281617/IMG_0422.jpg" alt="1"></p>
+<p>It is common for people to have the same GPA, grade level, and number of absences, but their names set them apart. If they have the same name it will be hard to identify everyone apart because there will be nothing to identify them.</p>
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1084671572444459018/IMG_7970.jpg" alt="2"></p>
+<p>When different counties organize data in different ways it will be hard to clean the data that is given. If there is garbage data in the data it will be hard to process that data so having all the counties organize data similarly will prevent that.</p>
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1084671582741463110/IMG_3665.jpg" alt="3"></p>
+<p>If the user were to enter abbreviations for the names of cities and misspell the name of the city it will make it hard for the user to find their search because it won't be in the database. Having each of the pieces of data in the database have its own ID will allow for them to more easily identify the searches.</p>
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1084671607001337876/IMG_9081.jpg" alt="4"></p>
+<p>They are trying to identify whch piece of information would show which artist has the greatest attendance during a particular month. They are given the total dollar amount of all tickets sold but that is not enough to identify how many tickets were sold. If they are able to see the average ticket price and divide the total dollar amount spent by the ticket price it will show the approximation of how many tickets were sold. The rest of the options do not identify anything about the attendance during a particular month.</p>
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1084681047511412796/IMG_4067.jpg" alt="5"></p>
+<p>The number of bicycles the car passed on a particular day is the best answer. This data is not captured by the cameras. Determining the number of bicycles the car encountered uses image recognition from the cameras. The images are the data collected and metadata is not used.</p>
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1084671627322720307/IMG_5710.jpg" alt="6"></p>
+<p>Option one can be analyzed with the answers from questions 1 and 3. Option two can be analyzed with the answers from questions 1 and 2</p>
+<h2 id="Implementing-into-my-own-PBL-project">
+<a class="anchor" href="#Implementing-into-my-own-PBL-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implementing into my own PBL project<a class="anchor-link" href="#Implementing-into-my-own-PBL-project"> </a>
+</h2>
+<p>printing all the data</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'files/perioddata.json'</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>       name  age period_start_date period_end_date ovulation_date
+0     Alice   13        2022-01-01      2022-01-05     2022-01-12
+1       Bob   14        2022-01-03      2022-01-07     2022-01-18
+2    Claire   16        2022-01-04      2022-01-08     2022-01-13
+3      Dave   17        2022-01-05      2022-01-09     2022-01-17
+4      Emma   15        2022-01-07      2022-01-11     2022-01-16
+5     Frank   13        2022-03-15      2022-03-19     2022-03-26
+6     Grace   17        2022-04-20      2022-04-24     2022-05-01
+7     Henry   18        2022-05-05      2022-05-09     2022-05-16
+8  Isabelle   14        2022-06-10      2022-06-14     2022-06-21
+9     Jacob   16        2022-06-20      2022-06-24     2022-06-29
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>printing data from ages least to greatest</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'files/perioddata.json'</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'age'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>       name  age period_start_date period_end_date ovulation_date
+0     Alice   13        2022-01-01      2022-01-05     2022-01-12
+5     Frank   13        2022-03-15      2022-03-19     2022-03-26
+1       Bob   14        2022-01-03      2022-01-07     2022-01-18
+8  Isabelle   14        2022-06-10      2022-06-14     2022-06-21
+4      Emma   15        2022-01-07      2022-01-11     2022-01-16
+2    Claire   16        2022-01-04      2022-01-08     2022-01-13
+9     Jacob   16        2022-06-20      2022-06-24     2022-06-29
+3      Dave   17        2022-01-05      2022-01-09     2022-01-17
+6     Grace   17        2022-04-20      2022-04-24     2022-05-01
+7     Henry   18        2022-05-05      2022-05-09     2022-05-16
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>printing data from ages greatest to least</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'files/perioddata.json'</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'age'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>       name  age period_start_date period_end_date ovulation_date
+7     Henry   18        2022-05-05      2022-05-09     2022-05-16
+3      Dave   17        2022-01-05      2022-01-09     2022-01-17
+6     Grace   17        2022-04-20      2022-04-24     2022-05-01
+2    Claire   16        2022-01-04      2022-01-08     2022-01-13
+9     Jacob   16        2022-06-20      2022-06-24     2022-06-29
+4      Emma   15        2022-01-07      2022-01-11     2022-01-16
+1       Bob   14        2022-01-03      2022-01-07     2022-01-18
+8  Isabelle   14        2022-06-10      2022-06-14     2022-06-21
+0     Alice   13        2022-01-01      2022-01-05     2022-01-12
+5     Frank   13        2022-03-15      2022-03-19     2022-03-26
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"The oldest user is:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">age</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">age</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The youngest user is:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">age</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">age</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The oldest user is:
+    name  age period_start_date period_end_date ovulation_date
+7  Henry   18        2022-05-05      2022-05-09     2022-05-16
+
+The youngest user is:
+    name  age period_start_date period_end_date ovulation_date
+0  Alice   13        2022-01-01      2022-01-05     2022-01-12
+5  Frank   13        2022-03-15      2022-03-19     2022-03-26
 </pre>
 </div>
 </div>
