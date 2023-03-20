@@ -13,14 +13,12 @@
 <link rel="canonical" href="https://clairehzhao.github.io/claire/2023/03/16/AP-unit2-4b.html" />
 <meta property="og:url" content="https://clairehzhao.github.io/claire/2023/03/16/AP-unit2-4b.html" />
 <meta property="og:site_name" content="claire’s apcsp blog" />
-<meta property="og:image" content="https://clairehzhao.github.io/claire/images/python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-03-16T00:00:00-05:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://clairehzhao.github.io/claire/images/python.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Unit 2.4b Using Programs with Data, SQL" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-16T00:00:00-05:00","datePublished":"2023-03-16T00:00:00-05:00","description":"Using Programs with Data is focused on SQL and database actions. Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style,","headline":"Unit 2.4b Using Programs with Data, SQL","image":"https://clairehzhao.github.io/claire/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://clairehzhao.github.io/claire/2023/03/16/AP-unit2-4b.html"},"url":"https://clairehzhao.github.io/claire/2023/03/16/AP-unit2-4b.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-16T00:00:00-05:00","datePublished":"2023-03-16T00:00:00-05:00","description":"Using Programs with Data is focused on SQL and database actions. Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style,","headline":"Unit 2.4b Using Programs with Data, SQL","mainEntityOfPage":{"@type":"WebPage","@id":"https://clairehzhao.github.io/claire/2023/03/16/AP-unit2-4b.html"},"url":"https://clairehzhao.github.io/claire/2023/03/16/AP-unit2-4b.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/claire/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://clairehzhao.github.io/claire/feed.xml" title="claire's apcsp blog" /><link rel="shortcut icon" type="image/x-icon" href="/claire/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -81,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      8 min read
     
 </span></p>
 
@@ -166,11 +164,19 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+<p>A database schema is a blueprint or plan that defines the structure of a database. It describes the organization and interrelationships among the various data elements or tables that make up the database.</p>
 <ul>
 <li>What is the purpose of identity Column in SQL database?</li>
+</ul>
+<p>The purpose of an identity column is to provide a unique identifier for each row in the table, without requiring the user to manually specify a value for that column.</p>
+<ul>
 <li>What is the purpose of a primary key in SQL database?</li>
+</ul>
+<p>A primary key is a column or set of columns that uniquely identifies each row in a table.</p>
+<ul>
 <li>What are the Data Types in SQL table?</li>
 </ul>
+<p>booleans, integers, strings, blog, imperative programming, OOP</p>
 
 </div>
 </div>
@@ -195,7 +201,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
     
     <span class="c1"># Fetch results of Schema</span>
-    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"PRAGMA table_info('users')"</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"PRAGMA table_info('periods')"</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 
     <span class="c1"># Print the results</span>
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
@@ -220,7 +226,7 @@ window.onload = wrap_img;
 <pre>(0, 'id', 'INTEGER', 1, None, 1)
 (1, '_name', 'VARCHAR(255)', 1, None, 0)
 (2, '_uid', 'VARCHAR(255)', 1, None, 0)
-(3, '_password', 'VARCHAR(255)', 1, None, 0)
+(3, '_ovulation', 'VARCHAR(255)', 1, None, 0)
 (4, '_dob', 'DATE', 0, None, 0)
 </pre>
 </div>
@@ -243,10 +249,20 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>What is a connection object?  After you google it, what do you think it does?</li>
+</ul>
+<p>A connection object is an object that represents a connection to a database. It is used to establish and manage a connection to a database and allows the programmer to execute commands and retrieve data from the database.</p>
+<ul>
 <li>Same for cursor object?</li>
+</ul>
+<p>A cursor object is an object that provides a way to iterate over the rows of a result set returned by a SQL query. It allows the programmer to fetch data from a database row by row, and perform operations on each row as it is retrieved.</p>
+<ul>
 <li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
+</ul>
+<p>The attributes that are in the conn object include special variables, function variables, class variables, in_transaction, isolation_level, row_factory, and total_changes. The attributes taht are in the cursor object include special variables, function variables, arraysize, connection, description, lastrowid, row_factory, and rowcount.</p>
+<ul>
 <li>Is "results" an object?  How do you know?</li>
 </ul>
+<p>Yes it is an object because it is set equal to cursor.execute()</p>
 
 </div>
 </div>
@@ -268,7 +284,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
     
     <span class="c1"># Execute a SELECT statement to retrieve data from a table</span>
-    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM users'</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM periods'</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 
     <span class="c1"># Print the results</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -294,12 +310,12 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, 'Thomas Edison', 'toby', 'sha256$9YhJcB3MNlhvVx5e$5922230fc15ed714833dd980a594d902caf9364b04e765795889b53dfa4ccc14', '1847-02-11')
-(2, 'Nikola Tesla', 'niko', 'sha256$W0IoE5csenXdypzz$80d6ec240f41c1f557930d2aca29917de3f0a713c9f85db7f56f9290800a91c7', '2023-03-15')
-(3, 'Alexander Graham Bell', 'lex', 'sha256$28zqCHidei1Dvris$010d9f5f580e10013a912e18ccd27bd2cb7dcb3452608f9aba453b1940b5975e', '2023-03-15')
-(4, 'Eli Whitney', 'whit', 'sha256$wRCofOx51vZKkG8Q$6284387c41f08659613b151477bb5c24fec80ddeda2071388fd0472b7dfed042', '2023-03-15')
-(5, 'Indiana Jones', 'indi', 'sha256$C6e6FTKlfSdqHVz8$b03356e6b9b2fe8b17d27bc0849c7fd24b1a40c79f374b249097631f6ff003c5', '1920-10-21')
-(6, 'Marion Ravenwood', 'raven', 'sha256$0mBNSZ42BKLPMYAS$9ab5190963ae79f7f3d92f324f61e7648bc51ba5474ce8230ff9a9e8da53c350', '1921-10-21')
+<pre>(2, 'Claire Zhao', 'clairez', '2023-03-20', '2007-02-01')
+(3, 'Thomas Edison', 'toby', '2023-03-12', '1847-02-11')
+(4, 'Nikola Tesla', 'niko', '2023-02-12', '2023-03-19')
+(5, 'Alexander Graham Bell', 'lex', '2023-03-09', '2023-03-19')
+(6, 'Eli Whitney', 'whit', '2023-02-07', '2023-03-19')
+(7, 'Annika Liao', 'annikal', '2023-02-08', '2007-09-23')
 </pre>
 </div>
 </div>
@@ -319,10 +335,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compare create() in both SQL lessons.  What is better or worse in the two implementations?</li>
 </ul>
 </blockquote>
+<p>In the create function of 2.4a the function uses SQLite database to take in the data that the user inputs to create the new users. The create function of 2.4b uses SQLAlchemy to create the new users. 2.4a function can be better used for more simple projects where as 2.4b function can be used for more complex projects.</p>
+<ul>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+</ul>
+<p>The SQL INSERT statement is used to insert new rows or records into a database table. The User init method is used to create a new user record in the database.</p>
 
 </div>
 </div>
@@ -339,7 +359,7 @@ window.onload = wrap_img;
 <span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
     <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your name:"</span><span class="p">)</span>
     <span class="n">uid</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your user id:"</span><span class="p">)</span>
-    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your password"</span><span class="p">)</span>
+    <span class="n">ovulation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your ovulation date 'YYYY-MM-DD' "</span><span class="p">)</span>
     <span class="n">dob</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your date of birth 'YYYY-MM-DD'"</span><span class="p">)</span>
     
     <span class="c1"># Connect to the database file</span>
@@ -350,11 +370,11 @@ window.onload = wrap_img;
 
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Execute an SQL command to insert data into a table</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO users (_name, _uid, _password, _dob) VALUES (?, ?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">dob</span><span class="p">))</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO periods (_name, _uid, _ovulation, _dob) VALUES (?, ?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">ovulation</span><span class="p">,</span> <span class="n">dob</span><span class="p">))</span>
         
         <span class="c1"># Commit the changes to the database</span>
         <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A new user record </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> has been created"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A new period record </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> has been created"</span><span class="p">)</span>
                 
     <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the INSERT:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
@@ -364,10 +384,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#create()</span>
+<span class="n">create</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new period record annikal has been created
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -384,10 +418,17 @@ window.onload = wrap_img;
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
 <li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
 </ul>
 </blockquote>
+<p>Checks to make sure the length of the new password is at least 2 characters. If it is not then the code presumes that they were hacked</p>
+<ul>
+<li>Explain try/except, when would except occur?</li>
+</ul>
+<p>Try/except is used for the errors that could occur. Except would occur if there is an error that did not pass through the try block of code.</p>
+<ul>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+</ul>
+<p>Try/except is repeated. This is repeated because there are many different places where checking to ensure everything is inputted correctly is necessary.</p>
 
 </div>
 </div>
@@ -403,10 +444,9 @@ window.onload = wrap_img;
 
 <span class="k">def</span> <span class="nf">update</span><span class="p">():</span>
     <span class="n">uid</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter user id to update"</span><span class="p">)</span>
-    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter updated password"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">password</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="n">message</span> <span class="o">=</span> <span class="s2">"hacked"</span>
-        <span class="n">password</span> <span class="o">=</span> <span class="s1">'gothackednewpassword123'</span>
+    <span class="n">ovulation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter updated ovulation date"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ovulation</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s2">"invalid date"</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">message</span> <span class="o">=</span> <span class="s2">"successfully updated"</span>
 
@@ -418,12 +458,12 @@ window.onload = wrap_img;
 
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Execute an SQL command to update data in a table</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE users SET _password = ? WHERE _uid = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">uid</span><span class="p">))</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE periods SET _ovulation = ? WHERE _uid = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">ovulation</span><span class="p">,</span> <span class="n">uid</span><span class="p">))</span>
         <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="c1"># The uid was not found in the table</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No uid </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> was not found in the table"</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with user id </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> the password has been </span><span class="si">{</span><span class="n">message</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with user id </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> the ovulation has been </span><span class="si">{</span><span class="n">message</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
             <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
     <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the UPDATE:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
@@ -433,10 +473,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#update()</span>
+<span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with user id clairez the ovulation has been successfully updated
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -453,9 +507,13 @@ window.onload = wrap_img;
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
 <li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
 </ul>
 </blockquote>
+<p>DELETE can be dangerous in the case that you delete all of your data and do not have it anywhere else.</p>
+<ul>
+<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+</ul>
+<p>f is used to embed expressions inside of string literals. The {uid} is used to input the user id that is being used in the code.</p>
 
 </div>
 </div>
@@ -479,7 +537,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
     
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE FROM users WHERE _uid = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">uid</span><span class="p">,))</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE FROM periods WHERE _uid = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">uid</span><span class="p">,))</span>
         <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="c1"># The uid was not found in the table</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No uid </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> was not found in the table"</span><span class="p">)</span>
@@ -494,10 +552,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#delete()</span>
+<span class="n">delete</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with uid clairez was successfully deleted
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -514,9 +586,13 @@ window.onload = wrap_img;
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
 <li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
 </ul>
 </blockquote>
+<p>The menu repeats because it is recursive.</p>
+<ul>
+<li>Could you refactor this menu?  Make it work with a List?</li>
+</ul>
+<p>Yes you could make it a list with c, r, u, d, s</p>
 
 </div>
 </div>
@@ -553,6 +629,24 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(3, 'Thomas Edison', 'toby', '2023-03-12', '1847-02-11')
+(4, 'Nikola Tesla', 'niko', '2023-02-12', '2023-03-19')
+(5, 'Alexander Graham Bell', 'lex', '2023-03-09', '2023-03-19')
+(6, 'Eli Whitney', 'whit', '2023-02-07', '2023-03-19')
+(7, 'Annika Liao', 'annikal', '2023-02-08', '2007-09-23')
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
