@@ -463,7 +463,7 @@ window.onload = wrap_img;
                 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Created new uid </span><span class="si">{</span><span class="nb">object</span><span class="o">.</span><span class="n">uid</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
             <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if object nit created</span>
                 <span class="sd">'''fails with bad or duplicate data'''</span>
-                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Records exist uid </span><span class="si">{</span><span class="n">period</span><span class="o">.</span><span class="n">uid</span><span class="si">}</span><span class="s2">, or error."</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Records exist uid </span><span class="si">{</span><span class="n">periods</span><span class="o">.</span><span class="n">uid</span><span class="si">}</span><span class="s2">, or error."</span><span class="p">)</span>
         <span class="c1"># try is exxecuted if successful and except is used if the rcord already exists or if there is an error</span>
                 
 <span class="n">initPeriods</span><span class="p">()</span>
@@ -479,10 +479,10 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Created new uid toby
-Created new uid niko
-Created new uid lex
-Created new uid whit
+<pre>Records exist uid toby, or error.
+Records exist uid niko, or error.
+Records exist uid lex, or error.
+Records exist uid whit, or error.
 </pre>
 </div>
 </div>
@@ -626,7 +626,7 @@ Created new uid whit
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Created
- {'id': 7, 'name': 'grace wang', 'uid': 'gracew', 'ovulation': '2023-01-14', 'dob': '09-13-2005', 'age': 17}
+ {'id': 8, 'name': 'Emma Shen', 'uid': 'emmas', 'ovulation': '2023-03-10', 'dob': '07-29-2006', 'age': 16}
 </pre>
 </div>
 </div>
@@ -686,13 +686,7 @@ Created new uid whit
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[{'id': 2,
-  'name': 'claire zhao',
-  'uid': 'clairez',
-  'ovulation': '2023-03-19',
-  'dob': '02-01-2007',
-  'age': 16},
- {'id': 3,
+<pre>[{'id': 3,
   'name': 'Thomas Edison',
   'uid': 'toby',
   'ovulation': '2023-03-12',
@@ -717,11 +711,17 @@ Created new uid whit
   'dob': '03-19-2023',
   'age': 0},
  {'id': 7,
-  'name': 'grace wang',
-  'uid': 'gracew',
-  'ovulation': '2023-01-14',
-  'dob': '09-13-2005',
-  'age': 17}]</pre>
+  'name': 'Annika Liao',
+  'uid': 'annikal',
+  'ovulation': '2023-02-08',
+  'dob': '09-23-2007',
+  'age': 15},
+ {'id': 8,
+  'name': 'Emma Shen',
+  'uid': 'emmas',
+  'ovulation': '2023-03-10',
+  'dob': '07-29-2006',
+  'age': 16}]</pre>
 </div>
 
 </div>
