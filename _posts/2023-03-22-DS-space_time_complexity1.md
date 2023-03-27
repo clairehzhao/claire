@@ -3,7 +3,6 @@ keywords: fastai
 description: Observing the time complexity of different algorithms
 title: Data Structures- Space and Time Complexity
 toc: true
-categories: []
 type: pbl
 week: 27
 nb_path: _notebooks/2023-03-22-DS-space_time_complexity1.ipynb
@@ -31,7 +30,7 @@ layout: notebook
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote><p>Why do you think a programmer should care about space and time complexity?</p>
 <ul>
-<li>?</li>
+<li>the space and time will impact the programmer in many ways. the programmer should know what is the most efficient and most beneficial algorithm.</li>
 </ul>
 </blockquote>
 
@@ -167,7 +166,7 @@ layout: notebook
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote><p>Do you think this is a time complexity or space complexity or both problem?</p>
 <ul>
-<li>?</li>
+<li>This is both time and space complexity because the number of pixels is taking up space and the amount of time it takes for the program to run will increase as the basewidth changes.</li>
 </ul>
 </blockquote>
 
@@ -590,13 +589,410 @@ layout: notebook
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h1><ul>
 <li>Record your findings when testing the time elapsed of the different algorithms.</li>
+</ul>
+<ul>
 <li>Although we will go more in depth later, time complexity is a key concept that relates to the different sorting algorithms. Do some basic research on the different types of sorting algorithms and their time complexity.</li>
+</ul>
+<p>Bubble Sort: Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. It has a worst-case and average-case time complexity of O(n^2), where n is the number of elements in the list.</p>
+<p>Selection Sort: Selection Sort is an algorithm that repeatedly finds the minimum element from the unsorted part of the list and puts it at the beginning of the list. It has a worst-case and average-case time complexity of O(n^2), where n is the number of elements in the list.</p>
+<p>Insertion Sort: Insertion Sort is an algorithm that builds the final sorted array one element at a time. It iterates through the list, comparing each element to its predecessor, and swaps them if they are in the wrong order. It has a worst-case and average-case time complexity of O(n^2), where n is the number of elements in the list.</p>
+<p>Merge Sort: Merge Sort is a divide-and-conquer algorithm that divides the input list into two halves, recursively sorts each half, and then merges the two sorted halves into a single sorted list. It has a worst-case and average-case time complexity of O(n log n), where n is the number of elements in the list.</p>
+<p>Quick Sort: Quick Sort is another divide-and-conquer algorithm that chooses a pivot element and partitions the list into two sub-lists, according to whether they are less than or greater than the pivot. It then recursively sorts the two sub-lists. It has a worst-case time complexity of O(n^2), but an average-case time complexity of O(n log n), where n is the number of elements in the list.</p>
+<p>Heap Sort: Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. It has a worst-case and average-case time complexity of O(n log n), where n is the number of elements in the list.</p>
+<ul>
 <li>Why is time and space complexity important when choosing an algorithm?</li>
+</ul>
+<p>Time and space complexity is important when choosing an algorithm because you want to make sure that the algorithm you are choosing is the most efficient in both the space and time aspect. Space and time can also affect how readible your algorithm is which is also an important factor.</p>
+<ul>
 <li>Should you always use a constant time algorithm / Should you never use an exponential time algorithm? Explain? </li>
+</ul>
+<p>There is no specific always or never in these alogirthms. When choosing an algorithm you should choose what is the most efficient for you. An example of a constant time algorithm is accessing a specific element in an array or a dictionary. The time it takes to access the element does not depend on the size of the array or dictionary, but only on the time it takes to perform a single memory access. An example of an exponential time algorithm is the brute force approach to solving the traveling salesman problem. The brute force approach involves trying every possible permutation of cities to find the shortest route. As the number of cities increases, the number of permutations grows exponentially, making the algorithm impractical for large datasets.</p>
+<ul>
 <li>What are some general patterns that you noticed to determine each algorithm's time and space complexity?</li>
 </ul>
+<p>Data structures: Analyze the data structures used in the algorithm and how they grow with the input size. For example, if the algorithm uses an array that doubles in size with each addition, it has O(n) space complexity.</p>
+<p>Nested loops: Look for nested loops in the code and analyze how many times they run based on the input size. Nested loops that iterate over the entire input for each level can indicate O(n^2), O(n^3), or higher time complexity.</p>
+<p>Recursion: Recursive functions can be analyzed by looking at the number of times the function is called and the size of the input for each call. Recursive functions that call themselves multiple times with a smaller input size can be an indicator of exponential time complexity.</p>
 <p>Complete the Time and Space Complexity analysis questions linked below.
 <a href="https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/">Practice</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>What is the time, and space complexity of the following code: </li>
+</ul>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+  <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">random</span><span class="p">()</span>
+ 
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
+  <span class="n">b</span><span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="n">random</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>O(N * M) time, O(1) space</li>
+<li>O(N + M) time, O(N + M) space</li>
+<li>O(N + M) time, O(1) space</li>
+<li>O(N * M) time, O(N + M) space</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer to this question is 3. O(N) is the first loop and O is the second loop.(M). We are unable to determine which word is the leading one because N and M are independent variables. As a result, the given problem's time complexity will be O(N+M). Space Complexity will be constant or O since the size of the variables does not rely on the size of the input.(1)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>What is the time complexity of the following code: </li>
+</ul>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">N</span><span class="p">)):</span>
+	<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="n">j</span><span class="p">;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>O(N)</li>
+<li>O(N*log(N))</li>
+<li>O(N * Sqrt(N))</li>
+<li>O(N*N)</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer to this question is 4.</p>
+<p>The above code runs total no of times</p>
+<p>= N + (N – 1) + (N – 2) + … 1 + 0</p>
+<p>= N * (N + 1) / 2</p>
+<p>= 1/2 <em> N^2 + 1/2 </em> N</p>
+<p>O(N^2) times.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>What is the time complexity of the following code: </li>
+</ul>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">j</span><span class="p">)):</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>O(n)</li>
+<li>O(N log N)</li>
+<li>O(n^2)</li>
+<li>O(n^2Logn)</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer to this question is 2. I don't know how to do logarithms.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>What does it mean when we say that an algorithm X is asymptotically more efficient than Y?</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>X will always be a better choice for small inputs</li>
+<li>X will always be a better choice for large inputs</li>
+<li>Y will always be a better choice for small inputs</li>
+<li>X will always be a better choice for all inputs</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer to this question is 2. This is because X is more efficient than Y which means that X will be better for larger inputs.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>What is the time complexity of the following code:</li>
+</ul>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">N</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+  <span class="n">a</span> <span class="o">+=</span> <span class="n">i</span>
+  <span class="n">i</span> <span class="o">//=</span> <span class="mi">2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>O(N)</li>
+<li>O(Sqrt(N))</li>
+<li>O(N / 2)</li>
+<li>O(log N)</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer to this question is 4 because we have to find the smallest x such that ‘(N / 2^x )&lt; 1 OR  2^x &gt; N’ 
+x = log(N)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Which of the following best describes the useful criterion for comparing the efficiency of algorithms?</li>
+</ul>
+<ol>
+<li>Time</li>
+<li>Memory</li>
+<li>Both of the above</li>
+<li>None of the above</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer is 3 both because for efficiency time and memory must be considered</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>How is time complexity measured?</li>
+</ul>
+<ol>
+<li>By counting the number of algorithms in an algorithm.</li>
+<li>By counting the number of primitive operations performed by the algorithm on a given input size.</li>
+<li>By counting the size of data input to the algorithm.</li>
+<li>None of the above</li>
+</ol>
+<p>The answer to this is 2 beecause the input size will control the amount of time that it will take because of the number of operations</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>What will be the time complexity of the following code?</li>
+</ul>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">*</span><span class="n">k</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>O(n)</li>
+<li>O(k)</li>
+<li>O(logkn)</li>
+<li>O(lognk)</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer is 3 because loops for the kn-1 times, so after taking log it becomes logkn.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>What will be the time complexity of the following code?</li>
+</ul>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="o">+</span><span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>n</li>
+<li>(n+1)</li>
+<li>n(n-1)</li>
+<li>n(n+1)</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The answer is 3 because the for loop will run for (n) times and another for loop will be run for (n-1) times as the inner loop will only run till the range i which is 1 less than n , so overall time will be n(n-1).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Algorithm A and B have a worst-case running time of O(n) and O(logn), respectively. Therefore, algorithm B always runs faster than algorithm A.</li>
+</ul>
+<ol>
+<li>True</li>
+<li>False</li>
+</ol>
+<p>The answer is false because the Big-O notation provides an asymptotic comparison in the running time of algorithms. For n &lt; n0​​, algorithm A might run faster than algorithm B, for instance.</p>
 
 </div>
 </div>
