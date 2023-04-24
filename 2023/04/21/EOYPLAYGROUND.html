@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      11 min read
     
 </span></p>
 
@@ -610,25 +610,201 @@ hello
 </ul>
 </li>
 </ul>
+<h2 id="New-Block-with-answered-questions">New Block with answered questions<a class="anchor-link" href="#New-Block-with-answered-questions"> </a></h2><p>1: 2D Array</p>
+<blockquote><p>Tic Tac Toe:Kush Sirohi</p>
+<ul>
+<li>What are some examples of 2d Arrays</li>
+<li>An example of a 2d array is the tic tac toe board game as it is repressented as a 3x3 grid and a multiplication table</li>
+<li>What is a modern day game that could be classified as a 2D array</li>
+<li>chess board because of the grid that is given</li>
+</ul>
+</blockquote>
+<p>How I used 2D Arrays (game example)</p>
+<ul>
+<li>Describe a 2D array in your own words</li>
+<li>A 2D array is a collection of data that is organized in a grid or matrix-like structure with rows and columns. It is like a table where each cell holds a value or piece of data.</li>
+</ul>
+<p>2: Iteration</p>
+<blockquote><p>Robot Game:Finn Carpenter- What is the defenition of iteration in your own words</p>
+<ul>
+<li>Iteration refers to the process of repeating a set of instructions or actions a certain number of times or until a specific condition is met.</li>
+</ul>
+</blockquote>
+<p>Iteration Game</p>
+<ul>
+<li><a href="https://f1nnc.github.io/Playground/robot">Link to the game</a></li>
+<li>Play the levels (only play the first 2 in class)</li>
+<li>Explain how the game relates to itertation</li>
+<li>This game relates to iteration because in this game there is repitition of steps being done until a condition is met which is getting the robot to the final spot</li>
+</ul>
+<p>How I used iteration (game example)</p>
+<ul>
+<li>What parts of the code use iteration</li>
+<li>the for loops and the looper that is used uses iteration</li>
+</ul>
+<p>How I used List to make a game</p>
+<ul>
+<li>Explain which parts of the code use lists</li>
+<li>the word_list is used for the code and word_list is then called later</li>
+<li>Explain what list manipulation is happening in that part</li>
+<li>word_list is called in word where they use a random choice from the word_list, the words are then used for the game</li>
+</ul>
 <h2 id="Iteration-0.2-(can-get-up-to-0.23)">Iteration 0.2 (can get up to 0.23)<a class="anchor-link" href="#Iteration-0.2-(can-get-up-to-0.23)"> </a></h2><ul>
 <li>Get to level 5<ul>
 <li>Take ScreenShots of your name inside the box an put them in your ticket</li>
 </ul>
 </li>
+</ul>
+<p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1099939608533401660/IMG_5434.jpg" alt="1" />
+<img src="https://cdn.discordapp.com/attachments/806618712056528906/1099939709632905266/IMG_5486.jpg" alt="2" />
+<img src="https://cdn.discordapp.com/attachments/806618712056528906/1099939733498503178/IMG_2955.jpg" alt="3" />
+<img src="https://cdn.discordapp.com/attachments/806618712056528906/1099939763361939567/IMG_1687.jpg" alt="4" />
+<img src="https://cdn.discordapp.com/attachments/806618712056528906/1099939800162775090/IMG_2414.jpg" alt="5" /></p>
+<ul>
 <li>Create a code segment with iteration that does something cool</li>
 </ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+
+<span class="c1"># Define the text to spin.</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;SPINNING!&quot;</span>
+
+<span class="c1"># Set the delay between frames.</span>
+<span class="n">delay</span> <span class="o">=</span> <span class="mf">0.1</span>
+
+<span class="c1"># Iterate through each character in the text, shifting the characters to the right by one position on each iteration.</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)):</span>
+    <span class="c1"># Clear the console screen.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[H</span><span class="se">\033</span><span class="s2">[J&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Create a new text string with the shifted characters.</span>
+    <span class="n">shifted_text</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="n">text</span><span class="p">[</span><span class="n">i</span><span class="p">:]</span> <span class="o">+</span> <span class="n">text</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span>
+
+    <span class="c1"># Print the shifted text to the console.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">shifted_text</span><span class="p">)</span>
+
+    <span class="c1"># Wait for a short delay before printing the next frame.</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">delay</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+SPINNING!
+
+ PINNING!S
+
+  INNING!SP
+
+   NNING!SPI
+
+    NING!SPIN
+
+     ING!SPINN
+
+      NG!SPINNI
+
+       G!SPINNIN
+
+        !SPINNING
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="2D-array-0.2-(can-get-up-to-0.23)">2D array 0.2 (can get up to 0.23)<a class="anchor-link" href="#2D-array-0.2-(can-get-up-to-0.23)"> </a></h2><ul>
 <li>Explain how the tic tac toe game works</li>
+</ul>
+<p>The game is using a 3x3 grid and each cell in the grid is either empty or filled with an "x" or "o" mark. The 2D array is used with the 3 rows and 3 columns to map out where an "x" or "o" could be on the game board.</p>
+<ul>
 <li>Give 3 Examples of games that can be made from 2D arrays</li>
 </ul>
+<p>Sudoku, 2048, chess</p>
 <h2 id="List-and-Dictionaries-0.2-(can-get-up-to-0.23)">List and Dictionaries 0.2 (can get up to 0.23)<a class="anchor-link" href="#List-and-Dictionaries-0.2-(can-get-up-to-0.23)"> </a></h2><ul>
 <li>Explain the differences between Lists and Dictionaries</li>
+</ul>
+<p>Lists are used to store ordered collections of values, while dictionaries are used to store collections of key-value pairs. They are both used to store values in different ways and are beneficial for writing a lot of code.</p>
+<ul>
 <li>Make a code block that manipulates either a list or a dictionary</li>
 </ul>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Original list:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="nb">list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List after adding 11:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="nb">list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List after removing the first element:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="nb">list</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List after reversing the order:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="nb">list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List after sorting in ascending order:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Original list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+List after adding 11: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+List after removing the first element: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+List after reversing the order: [11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+List after sorting in ascending order: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
