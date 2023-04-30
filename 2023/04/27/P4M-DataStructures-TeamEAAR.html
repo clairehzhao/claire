@@ -946,6 +946,7 @@ August 20
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your grocery list:&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">item</span><span class="p">,</span> <span class="n">price</span> <span class="ow">in</span> <span class="n">grocery_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">total_cost</span> <span class="o">+=</span> <span class="n">price</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- </span><span class="si">{}</span><span class="s2">: $</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">price</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total cost: $</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total_cost</span><span class="p">))</span>
     
@@ -988,13 +989,15 @@ August 20
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Your grocery list:
-- carrot: $0.99
-- spinach: $2.0
-Total cost: $0
+- ravioli: $2.99
+- mango: $0.99
+- juice: $1.99
+Total cost: $5.970000000000001
 Final grocery list:
-- carrot: $0.99
-- spinach: $2.0
-Total cost: $0
+- ravioli: $2.99
+- mango: $0.99
+- juice: $1.99
+Total cost: $5.970000000000001
 </pre>
 </div>
 </div>
