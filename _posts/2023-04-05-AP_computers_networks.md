@@ -32,7 +32,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 ![image](https://cdn.discordapp.com/attachments/806618712056528906/1102316822675607572/IMG_4308.jpg)
 
-![Computer Hardware](/images/cpu.jpeg)
+![Computer Hardware](images/cpu.jpeg)
 
 
 ### The Internet
@@ -85,7 +85,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
-![Full Stack](/images/fullstack.png)
+![Full Stack](images/fullstack.png)
 ![image](https://cdn.discordapp.com/attachments/806618712056528906/1102361217483411556/IMG_0166.jpg)
 
 
