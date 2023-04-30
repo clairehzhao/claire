@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      8 min read
     
 </span></p>
 
@@ -132,7 +132,7 @@ window.onload = wrap_img;
 
 <p><img src="https://cdn.discordapp.com/attachments/806618712056528906/1102316822675607572/IMG_4308.jpg" alt="image"></p>
 
-<p><img src="/claire/images/cpu.jpeg" alt="Computer Hardware"></p>
+<p><img src="/images/cpu.jpeg" alt="Computer Hardware"></p>
 
 <h3 id="the-internet">
 <a class="anchor" href="#the-internet" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Internet</h3>
@@ -155,12 +155,12 @@ window.onload = wrap_img;
   </li>
   <li>Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use <code class="language-plaintext highlighter-rouge">traceroute</code> and <code class="language-plaintext highlighter-rouge">ping</code> commands from Linux Terminal.
     <ul>
-      <li>Path</li>
-      <li>Route</li>
-      <li>Computer System</li>
-      <li>Computer Device</li>
-      <li>Bandwidth</li>
-      <li>Computer Network</li>
+      <li>Path (A)</li>
+      <li>Route (E)</li>
+      <li>Computer System (B)</li>
+      <li>Computer Device (C)</li>
+      <li>Bandwidth (D)</li>
+      <li>Computer Network (F)</li>
     </ul>
   </li>
 </ul>
@@ -170,8 +170,16 @@ window.onload = wrap_img;
 </blockquote>
 
 <ul>
-  <li>
-    <p>Complete True of False Questions</p>
+  <li>Complete True of False Questions
+    <ol>
+      <li>T</li>
+      <li>F</li>
+      <li>F</li>
+      <li>T</li>
+      <li>F</li>
+      <li>F</li>
+      <li>T</li>
+    </ol>
   </li>
   <li>Essential Knowledge
     <ul>
@@ -194,7 +202,8 @@ window.onload = wrap_img;
   <li>Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas</li>
 </ul>
 
-<p><img src="/claire/images/fullstack.png" alt="Full Stack"></p>
+<p><img src="/images/fullstack.png" alt="Full Stack">
+<img src="https://cdn.discordapp.com/attachments/806618712056528906/1102361217483411556/IMG_0166.jpg" alt="image"></p>
 
 <ul>
   <li>Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following …</li>
@@ -232,6 +241,22 @@ window.onload = wrap_img;
   <li>Complete the network activity, summarize your understanding of fault tolerance.</li>
 </ul>
 
+<p>First Video:</p>
+
+<p>i. yes it is fault tolerant because if one wire goes down communication can still continue.</p>
+
+<p>ii. no it is not fault tolerant because there is only one connection to F meaning if it is cut off there will be faults</p>
+
+<p>iii. no it is not fault tolerant because there is only one connection to A meaning if it is cut off there will be faults</p>
+
+<p>Second Video:</p>
+
+<p>i. C</p>
+
+<p>ii. A</p>
+
+<p>The internet is fault tolerant meaning that devices can communicate with one another even if one path goes down. Redundancy occurs in network, so that if one wire goes down, the other devices can still have access to signals.</p>
+
 <h3 id="parallel-and-distributed-computing">
 <a class="anchor" href="#parallel-and-distributed-computing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parallel and Distributed Computing</h3>
 <blockquote>
@@ -239,13 +264,17 @@ window.onload = wrap_img;
 </blockquote>
 
 <ul>
-  <li>
-    <p>What is naturally Distributed in Frontend/Backend archeticture?</p>
-  </li>
-  <li>
-    <p>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a></p>
-  </li>
+  <li>What is naturally Distributed in Frontend/Backend archeticture?</li>
 </ul>
+
+<p>In a frontend/backend architecture, the backend is naturally distributed. The backend consists of servers, databases, and other components that handle complex processing tasks, such as data manipulation, business logic, and database operations. These tasks are distributed across multiple servers or instances to improve performance, handle high volumes of requests, and ensure fault tolerance. Load balancers are often employed to evenly distribute incoming traffic among backend servers, optimizing resource utilization. Scalability is achieved by adding more servers or instances to accommodate increasing demand. In contrast, the frontend, which runs on the client-side, is not inherently distributed. The frontend code executes within the user’s browser or device and interacts with the distributed backend services through APIs or other communication protocols.</p>
+
+<ul>
+  <li>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a>
+</li>
+</ul>
+
+<p>The command is used to configure the Gunicorn web server. The –workers option specifies the number of worker processes that would be created to handle incoming requests. The Gunicorn will bind to port 8086.</p>
 
 <blockquote>
   <p>Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.</p>
