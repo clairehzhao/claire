@@ -32,7 +32,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 ![image](https://cdn.discordapp.com/attachments/806618712056528906/1102316822675607572/IMG_4308.jpg)
 
-![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
+![Computer Hardware](/images/cpu.jpeg)
 
 
 ### The Internet
@@ -49,16 +49,23 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - Path (A)
+    - Route (E)
+    - Computer System (B)
+    - Computer Device (C)
+    - Bandwidth (D)
+    - Computer Network (F)
 
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+1. T
+2. F
+3. F 
+4. T
+5. F
+6. F
+7. T
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
@@ -78,7 +85,8 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
-![Full Stack]({{site.baseurl}}/images/fullstack.png)
+![Full Stack](/images/fullstack.png)
+![image](https://cdn.discordapp.com/attachments/806618712056528906/1102361217483411556/IMG_0166.jpg)
 
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
@@ -112,13 +120,35 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
+First Video:
+
+i. yes it is fault tolerant because if one wire goes down communication can still continue.
+
+ii. no it is not fault tolerant because there is only one connection to F meaning if it is cut off there will be faults
+
+iii. no it is not fault tolerant because there is only one connection to A meaning if it is cut off there will be faults
+
+
+Second Video:
+
+i. C
+
+ii. A
+
+
+The internet is fault tolerant meaning that devices can communicate with one another even if one path goes down. Redundancy occurs in network, so that if one wire goes down, the other devices can still have access to signals.
+
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
 - What is naturally Distributed in Frontend/Backend archeticture?  
 
+In a frontend/backend architecture, the backend is naturally distributed. The backend consists of servers, databases, and other components that handle complex processing tasks, such as data manipulation, business logic, and database operations. These tasks are distributed across multiple servers or instances to improve performance, handle high volumes of requests, and ensure fault tolerance. Load balancers are often employed to evenly distribute incoming traffic among backend servers, optimizing resource utilization. Scalability is achieved by adding more servers or instances to accommodate increasing demand. In contrast, the frontend, which runs on the client-side, is not inherently distributed. The frontend code executes within the user's browser or device and interacts with the distributed backend services through APIs or other communication protocols.
+
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
+
+The command is used to configure the Gunicorn web server. The –workers option specifies the number of worker processes that would be created to handle incoming requests. The Gunicorn will bind to port 8086.
 
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
