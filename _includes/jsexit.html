@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    canvas {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="500" height="300"></canvas>
+
+  <script>
+    const canvas = document.getElementById("myCanvas"); // get the canvas element
+    const ctx = canvas.getContext("2d"); // get the canvas context
+
+    const delay = ms => new Promise(resolve => setTimeout(resolve, ms)); // delay function for visualization
+
+    async function bubbleSort(arr) { // bubble Sort function
+      const n = arr.length; // get the length of the array
+
+      for (let i = 0; i < n - 1; i++) { // iterate over each element
+        for (let j = 0; j < n - i - 1; j++) { // Ccmpare adjacent elements
+          if (arr[j] > arr[j + 1]) { // if elements are in the wrong order
+            // swap the elements
+            const temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+
+            // clear the canvas and draw the updated array
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawArray(arr);
+
+            // Delay for visualization
+            await delay(100);
+          }
+        }
+      }
+    }
+
+    function drawArray(arr) { // function to draw the array as bars on the canvas
+      const barWidth = canvas.width / arr.length; // calculate the width of each bar
+      const barHeightScale = canvas.height / Math.max(...arr); // calculate the scaling factor for bar heights
+
+      ctx.fillStyle = "pink"; //set the fill style to pink
+
+      for (let i = 0; i < arr.length; i++) { // iterate over each element
+        const barHeight = arr[i] * barHeightScale; // calculate the height of the current bar
+        const x = i * barWidth; // calculate the x-coordinate of the current bar
+        const y = canvas.height - barHeight; // calculate the y-coordinate of the current bar
+        ctx.fillRect(x, y, barWidth, barHeight); // draw the bar on the canvas
+      }
+    }
+
+    const array = [6, 15, 10, 3, 8, 2, 9, 1, 14, 7, 12, 5, 11, 4, 13]; // array to be sorted
+
+    bubbleSort(array) // sort the array using Bubble Sort
+      .then(() => console.log("Sorting completed!")) // logging message when sorting is completed
+      .catch(error => console.error(error)); // logging error message if any
+
+    drawArray(array); // initial drawing of the array on the canvas
+  </script>
+</body>
+</html>
